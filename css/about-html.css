@@ -1,0 +1,223 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+.SH-navbar {
+    background-color: #76FFC3 !important;
+}
+
+.SH-mid-content {
+    height: 55rem;
+    animation-name: SH-mid-content;
+    visibility: hidden;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.SH-md-gif {
+    top: 12rem;
+    left: 18rem;
+    box-shadow: 1px 1px 10px inset gray;
+    border-radius: 10px;
+    border-bottom-style: solid ;
+    border-color: #90FECD;
+    border-width: 8px ;
+}
+
+.SH-another-hover:hover {
+    color: black !important;
+
+}
+
+@font-face {
+    font-family: NG-B;
+    src: url(/fonts/NanumGothic-Regular.ttf);
+}
+
+.SH-name {
+    font-size: 64px;
+    font-family: NG-B !important;
+    font-weight: 600;
+    margin-left: 40rem;
+    margin-top: -10rem;
+}
+
+.SH-text-under-name {
+    font-size: 20px;
+    font-family: NG-B !important;
+    font-weight: 600;
+    margin-left: 40rem;
+}
+
+@keyframes SH-mid-content {
+    0% {right: 200rem; visibility: visible;}
+    100% {right: 0rem; visibility: visible;}
+    
+}
+
+.SH-bottom-bar {
+    background-color: #43B182;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+.SH-leftside, .SH-rightside {
+    height:75vh;
+    width:100%;
+}
+
+.SH-leftside {
+    background-color: #90FECD;
+    transition: all 0.5s linear;
+    visibility: hidden;
+}
+
+.leftside-ann {
+    animation-name: leftside-ann;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+.SH-rightside {
+    transition: all 0.5s linear;
+    visibility: hidden;
+}
+
+.rightside-ann {
+    animation-name: rightside-ann;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+.SH-leftside:hover {
+    box-shadow: 1px 0px 10px black;
+    transition: all 0.5s linear;
+    z-index: 1;
+}
+
+.SH-rightside:hover {
+    box-shadow: -1px 0px 10px black;
+    transition: all 0.5s linear;
+    z-index: 1;
+
+}
+
+.SH-discord-text {
+    font-size: 46px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: #6874f7;
+    top: 2.5rem;
+}
+
+.SH-discord {
+    display: block;
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    left: 18.25rem;
+    top: 5rem;
+    box-shadow: 2px 2px 10px #5865F2;
+}
+
+.SH-discord:hover {
+    height: 500px;
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+
+
+}
+
+.SH-discord-egg {
+    bottom: 0rem;
+    left: 48rem;
+    animation-name: shiba-easteregg;
+    animation-delay: 120s;
+    animation-duration: 20s;
+    user-select: none;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shiba-easteregg {
+    0% {left: -67rem; visibility: hidden;}
+    100% {left: 48rem; visibility: visible;}
+    
+}
+
+.SH-socialmedia-text {
+    font-size: 46px;
+    top: 2.5rem;
+    font-weight: 600;
+}
+
+.SH-facebook-img {
+    border-radius: 8px;
+    object-fit: fill;
+    cursor: pointer;
+    top: 8rem;
+    left: 18rem;
+}
+
+.SH-steam-img {
+    border-radius: 8px;
+    object-fit: fill;
+    background-color: black;
+    max-width: 22rem;
+    padding-right: 0rem;
+    top: 8rem;
+    left: 24rem;
+}
+
+.SH-instagram-img {
+    border-radius: 8px;
+    object-fit: fill;
+    max-width: 22rem;
+    padding-right: 0rem;
+    top: 8rem;
+    left: 30rem;
+}
+
+.SH-twitch-img {
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 22rem;
+    padding-right: 0rem;
+    top: 8rem;
+    left: 36rem;
+}
+
+.SH-facebook-img:hover, .SH-twitch-img:hover, .SH-instagram-img:hover, .SH-steam-img:hover {
+    cursor: pointer;
+}
+
+@keyframes leftside-ann {
+    0% {right: 200rem; visibility: hidden;}
+    100% {right: 0rem; visibility: visible;} 
+}
+
+@keyframes rightside-ann {
+    0% {left: 200rem; visibility: hidden;}
+    100% {left: 0rem; visibility: visible;} 
+}
