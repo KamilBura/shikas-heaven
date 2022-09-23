@@ -176,39 +176,56 @@ body {
     border-radius: 8px;
     object-fit: fill;
     cursor: pointer;
-    top: 8rem;
-    left: 18rem;
+    margin: 5px;
+    max-width: 11rem;
+    padding-right: 0rem;
+    width: 2.5rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 1 !important;
 }
 
 .SH-steam-img {
     border-radius: 8px;
     object-fit: fill;
     background-color: black;
-    max-width: 22rem;
+    max-width: 11rem;
     padding-right: 0rem;
-    top: 8rem;
-    left: 24rem;
+    margin: 5px;
+    width: 2.5rem;
+    transition: all 0.5s ease-in-out;
 }
 
 .SH-instagram-img {
     border-radius: 8px;
     object-fit: fill;
-    max-width: 22rem;
+    max-width: 11rem;
     padding-right: 0rem;
-    top: 8rem;
-    left: 30rem;
+    margin: 5px;
+    width: 2.5rem;
+    transition: all 0.5s ease-in-out;
 }
 
 .SH-twitch-img {
     border-radius: 8px;
     object-fit: cover;
-    max-width: 22rem;
+    max-width: 11rem;
     padding-right: 0rem;
-    top: 8rem;
-    left: 36rem;
+    margin: 5px;
+    width: 2.5rem;
+    transition: all 0.5s ease-in-out;
 }
 
-.SH-facebook-img:hover, .SH-twitch-img:hover, .SH-instagram-img:hover, .SH-steam-img:hover {
+.SH-tiktok-img {
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 11rem;
+    padding-right: 0rem;
+    margin: 5px;
+    width: 2.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.SH-tiktok-img:hover, .SH-facebook-img:hover, .SH-twitch-img:hover, .SH-instagram-img:hover, .SH-steam-img:hover {
     cursor: pointer;
 }
 
@@ -221,3 +238,269 @@ body {
     0% {left: 200rem; visibility: hidden;}
     100% {left: 0rem; visibility: visible;} 
 }
+
+.SH-facebook-bg {
+    background-color: #1B3562;
+    width: 100%;
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.SH-steam-bg {
+    background-color: #222;
+    width: 100%;
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.SH-instagram-bg {
+    background-color: #DD113D;
+    width: 100%;
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.SH-twitch-bg {
+    background-color: #9146F1;
+    width: 100%;
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.SH-tiktok-bg {
+    background-color: #111111;
+    width: 100%;
+    height: 3rem;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+}
+
+div.SH-twitch-bg:hover > img.SH-twitch-img {
+    width: 5rem;
+    transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+
+div.SH-twitch-bg:hover {
+    height: 6rem;
+}
+
+
+div.SH-instagram-bg:hover > img.SH-instagram-img {
+    width: 5rem;
+    transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+
+div.SH-instagram-bg:hover {
+    height: 6rem;
+}
+
+div.SH-steam-bg:hover > img.SH-steam-img {
+    width: 5rem;
+    transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+
+div.SH-steam-bg:hover {
+    height: 6rem;
+}
+
+div.SH-facebook-bg:hover > img.SH-facebook-img {
+    width: 5rem;
+    transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+
+div.SH-facebook-bg:hover {
+    height: 6rem;
+}
+
+div.SH-tiktok-bg:hover > img.SH-tiktok-img {
+    width: 5rem;
+    transition: all 0.5s ease-in-out;
+    margin: 8px;
+}
+
+div.SH-tiktok-bg:hover {
+    height: 6rem;
+}
+
+div.SH-facebook-text {
+    color: white;
+    font-family: NG-B;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    right: 14rem;
+    top: 2rem;
+    user-select: none;
+    visibility: hidden;
+    z-index: 1000 !important;
+}
+
+.SH-name-color-blue {
+    color: #3a6eff;
+    font-weight: 600;
+    user-select: none;
+}
+
+.SH-facebook-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-facebook-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+.SH-steam-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-steam-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+div.SH-steam-text {
+    color: white;
+    font-family: NG-B;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    right: 14rem;
+    top: 2rem;
+    user-select: none;
+    visibility: hidden;
+    z-index: 1000 !important;
+}
+
+.SH-name-color-black {
+    color: #3a3a3a;
+    font-weight: 600;
+    user-select: none;
+}
+
+.SH-instagram-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-instagram-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+div.SH-instagram-text {
+    color: white;
+    font-family: NG-B;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    right: 14rem;
+    top: 2rem;
+    user-select: none;
+    visibility: hidden;
+    z-index: 1000 !important;
+}
+
+.SH-name-color-red {
+    color: #fc4a4a;
+    font-weight: 600;
+    user-select: none;
+}
+
+.SH-twitch-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-twitch-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+div.SH-twitch-text {
+    color: white;
+    font-family: NG-B;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    right: 14rem;
+    top: 2rem;
+    user-select: none;
+    visibility: hidden;
+    z-index: 1000 !important;
+}
+
+.SH-name-color-purple {
+    color: rgb(155, 79, 255);
+    font-weight: 600;
+    user-select: none;
+}
+
+.SH-tiktok-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-tiktok-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+div.SH-tiktok-text {
+    color: white;
+    font-family: NG-B;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    right: 14rem;
+    top: 2rem;
+    user-select: none;
+    visibility: hidden;
+    z-index: 1000 !important;
+}
+
+@keyframes socialmedia-name-text-ann {
+    0% {right: 50rem;visibility: hidden;}
+    100% {right: 14rem;visibility: visible;}  
+}
+
+@keyframes socialmedia-name-text-ann-out {
+    0% {right: 14rem;visibility: visible;}  
+    100% {right: 50rem;visibility: hidden;}
+}
+

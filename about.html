@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shika's Heaven | About</title>
+  <link rel="icon" type="image/x-icon" href="/shikas-heaven/images/shiba-inu.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -11,6 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
   <link rel="stylesheet" href="/css/about-html.css">
   <script src="/js/observer.js"></script>
+  <script src="/js/jquery-about-ann.js"></script>
 </head>
 <body>
         <!--NAVIGATION BAR-->
@@ -34,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link SH-another-hover" href="#">Minecraft Server</a>
                     </li>
                 </ul>
         </nav>
@@ -59,11 +64,32 @@
             <div class="col">
 
                 <div class="SH-leftside position-relative">
-                    <div class="SH-socialmedia-text text-center position-relative">Join my Socialmedia!</div>
-                    <img src="/images/clipart1854464.png" onclick="window.open('https://www.facebook.com/kamil.shikaru.bura')" class="SH-facebook-img position-absolute" width="75px">
-                    <img src="/images/steam.png" width="75px" onclick="window.open('https://steamcommunity.com/id/Shikaru_/')" class="SH-steam-img position-absolute">
-                    <img src="/images/Instagram-Icon.png" width="75px" class="SH-instagram-img position-absolute" onclick="window.open('https://www.instagram.com/kamil_bura/')">
-                    <img src="/images/twitch-6860918_960_720.png" width="75px" class="SH-twitch-img position-absolute" onclick="window.open('https://www.twitch.tv/yourshika')">
+
+                <div class="SH-facebook-bg position-relative" onclick="window.open('https://www.facebook.com/kamil.shikaru.bura')" onmouseenter="inannfacebook()" onmouseleave="outannfacebook()">
+                    <img src="/images/clipart1854464.png" onclick="window.open('https://www.facebook.com/kamil.shikaru.bura')" class="SH-facebook-img position-absolute">
+                    <div id="facebook-text" class="SH-facebook-text position-relative">Kamil <span class="SH-name-color-blue whitespace-nowrap text-decoration-none">"Shikaru"</span> Bura</div>
+                </div>
+
+                <div class="SH-steam-bg position-relative" onclick="window.open('https://steamcommunity.com/id/Shikaru_/')" onmouseenter="inannsteam()" onmouseleave="outannsteam()">
+                    <img src="/images/steam.png" onclick="window.open('https://steamcommunity.com/id/Shikaru_/')" class="SH-steam-img position-absolute">
+                    <div id="steam-text" class="SH-steam-text position-relative">your<span class="SH-name-color-black whitespace-nowrap text-decoration-none">Shika</span></div>
+                </div>
+
+                <div class="SH-instagram-bg position-relative" onmouseenter="inanninstagram()" onmouseleave="outanninstagram()" onclick="window.open('https://www.instagram.com/kamil_bura/')">
+                    <img src="/images/Instagram-Icon.png" class="SH-instagram-img position-absolute" onclick="window.open('https://www.instagram.com/kamil_bura/')">
+                    <div id="instagram-text" class="SH-instagram-text position-relative">Kamil <span class="SH-name-color-red whitespace-nowrap text-decoration-none">"Shikaru"</span> Bura</div>
+                </div>
+
+                <div class="SH-twitch-bg position-relative"onmouseenter="inanntwitch()" onmouseleave="outanntwitch()" onclick="window.open('https://www.twitch.tv/yourshika')">
+                    <img src="/images/twitch-6860918_960_720.png" class="SH-twitch-img position-absolute" onclick="window.open('https://www.twitch.tv/yourshika')">
+                    <div id="twitch-text" class="SH-twitch-text position-relative">your<span class="SH-name-color-purple whitespace-nowrap text-decoration-none">Shika</span></div>
+                </div>
+
+                <div class="SH-tiktok-bg position-relative"onmouseenter="inanntiktok()" onmouseleave="outanntiktok()" onclick="window.open('https://www.tiktok.com/@shikaru_san')">
+                    <img src="/images/tiktok-icon2.png" class="SH-tiktok-img position-absolute" onclick="window.open('https://www.tiktok.com/@shikaru_san')">
+                    <div id="tiktok-text" class="SH-tiktok-text position-relative">@shikaru_san</div>
+                </div>
+
                 </div>
 
             </div>
