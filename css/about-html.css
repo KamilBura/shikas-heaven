@@ -45,7 +45,7 @@ body {
 
 @font-face {
     font-family: NG-B;
-    src: url(/fonts/NanumGothic-Regular.ttf);
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
 }
 
 .SH-name {
@@ -503,4 +503,5 @@ div.SH-tiktok-text {
     0% {right: 14rem;visibility: visible;}  
     100% {right: 50rem;visibility: hidden;}
 }
+
 
