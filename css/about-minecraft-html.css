@@ -1,0 +1,651 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+.SH-navbar {
+    background-color: #76FFC3 !important;
+}
+
+.SH-mid-content {
+    height: 95vh;
+    z-index: 2;
+}
+
+.SH-another-hover:hover {
+    color: black !important;
+}
+
+.SH-mid-content-video {
+    transform: translatez(0);
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;    
+  
+    margin: auto;
+  
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.SH-mid-content-gif {
+    float: right;
+    text-align: end;
+    bottom: -30rem;
+}
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+.SH-name {
+    font-size: 64px;
+    font-family: NG-B !important;
+    font-weight: 600;
+    top: 17rem;
+    left: 4rem;
+    animation-name: name-ann;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    visibility: hidden;
+}
+
+.SH-text-under-name {
+    font-size: 18px;
+    font-family: NG-B !important;
+    font-weight: 600;
+    top: 16.5rem;
+    left: 10rem;
+    animation-name: name-ann;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.5s;
+    visibility: hidden;
+}
+
+@keyframes name-ann {
+    0% {left: -200rem;visibility: hidden;}
+    100% {left: "";visibility: visible;}
+    
+}
+
+.SH-bottom-bar {
+    background-color: #43B182;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+.SH-leftside, .SH-rightside {
+    height:530vh;
+    width:100%;
+}
+
+.SH-leftside {
+    background-color: transparent;
+    transition: all 0.5s linear;
+    visibility: visible;
+}
+
+.leftside-ann {
+    animation-name: sleftside-ann;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+.SH-rightside {
+    background-color: transparent;
+    transition: all 0.5s linear;
+    visibility: visible;
+}
+
+.rightside-ann {
+    animation-name: srightside-ann;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+@keyframes leftside-ann {
+    0% {right: 200rem; visibility: hidden;}
+    100% {right: 0rem; visibility: visible;} 
+}
+
+@keyframes rightside-ann {
+    0% {left: 200rem; visibility: hidden;}
+    100% {left: 0rem; visibility: visible;} 
+}
+
+.SH-aboutserver-content {
+    z-index: 222 !important;
+    height: 530vh;
+    background-color: #3b3b3b !important;
+    box-shadow: 1px 1px 10px ;
+}
+
+.SH-leftside-customprefix {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 2rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-customprefix {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 1.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-customprefix-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 40%;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-backpacks {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 15rem;
+    visibility: hidden;
+}
+
+.SH-rightside-undertext-backpacks {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 14.5rem;
+    visibility: hidden;
+}
+
+.SH-rightside-backpacks-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-leftside-death {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 20rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-death {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 19.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-death-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-customblocks {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 30rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-undertext-customblocks {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 29.5rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-customblocks-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 50%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+}
+
+.SH-leftside-damageind {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 40rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-damageind {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 39.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-damageind-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 50%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-customenchant {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 50rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-undertext-customenchant {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 49.5rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-customenchant-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 50%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-leftside-hologramm {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 60rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-hologramm {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 59.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-hologramm-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 50%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-bar {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 70rem;
+    visibility: hidden;
+}
+
+.SH-rightside-undertext-bar {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 69.5rem;
+    visibility: hidden;
+}
+
+.SH-rightside-bar-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-leftside-bosses {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 80rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-bosses {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 79.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-bosses-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-classes {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 85rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-undertext-classes {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 84.5rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-classes-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-leftside-level {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 110rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-level {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 109.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-level-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-playerinf {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 110rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-undertext-playerinf {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 109.5rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-playerinf-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-leftside-items {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 130rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-undertext-items {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 129.5rem;
+    visibility: hidden;
+
+}
+
+.SH-leftside-items-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+@keyframes text-ann-right {
+    0% {left:200rem;visibility: hidden;}
+    100% {left: 0rem;visibility: visible;}
+}
+
+.text-com-ann-right {
+    animation-name: text-ann-right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes text-ann-left {
+    0% {right:200rem;visibility: hidden;}
+    100% {right: 0rem;visibility: visible;}
+}
+
+.text-com-ann-left {
+    animation-name: text-ann-left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.SH-under-about-content {
+    height: 60vh;
+    background-color: #90FECD;
+}
+
+.SH-under-about-text {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: #40c583;
+    top: 5rem;
+}
+
+.SH-under-about-button {
+    padding: 1.5rem 5rem;
+    top: 8rem;
+    background-color: #43B182 !important;
+    color: white;
+}
+
+.SH-under-about-button:hover {
+    color: #76FFC3;
+}
