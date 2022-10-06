@@ -1,0 +1,41 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 2rem;
+}
+
+.p {
+    float: left;
+    top: 4rem;
+    font-size: 32px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.SH-main-text {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: start;
+    top: 2rem;
+    left: 2rem;
+}
+
+.SH-under-main-text {
+    font-size: 22px;
+    margin: 2rem 3rem;
+
+}
+
+img {
+    border-radius: 10px;
+    width: 800px;
+    display: block;
+    left: 400px;
+    vertical-align: top;
+
+}

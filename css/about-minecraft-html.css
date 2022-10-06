@@ -95,7 +95,7 @@ body {
 }
 
 .SH-leftside, .SH-rightside {
-    height:530vh;
+    height:570vh;
     width:100%;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .SH-aboutserver-content {
     z-index: 222 !important;
-    height: 530vh;
+    height: 570vh;
     background-color: #3b3b3b !important;
     box-shadow: 1px 1px 10px ;
 }
@@ -589,6 +589,42 @@ body {
 }
 
 .SH-leftside-items-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;
+    width: 60%;
+    max-width: fit-content;
+    overflow: hidden;
+    top: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    visibility: hidden;
+}
+
+.SH-rightside-mobslevel {
+    font-size: 64px;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 130rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-undertext-mobslevel {
+    font-size: 20px !important;
+    font-family: NG-B;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    top: 129.5rem;
+    visibility: hidden;
+
+}
+
+.SH-rightside-mobslevel-img {
     display: block;
     margin-left:auto;
     margin-right:auto;

@@ -393,3 +393,32 @@ $(document).ready(function(){
         callbackFunction: function(elem, action){}
     });
  });
+
+ //
+
+ $(document).ready(function(){
+    $('.SH-rightside-mobslevel').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+ });
+
+ $(document).ready(function(){
+    $('.SH-rightside-undertext-mobslevel').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+ });
+
+ $(document).ready(function(){
+    $('.SH-rightside-mobslevel-img').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+ });
