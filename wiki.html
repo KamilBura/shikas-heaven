@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- BASIC ////////////////////////////////////////////////////////-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shika's Heaven | Updates</title>
+  <title>Shika's Heaven | About</title>
+
+  <!-- SITE LOGO ////////////////////////////////////////////////////////-->
   <link rel="icon" type="image/x-icon" href="/shikas-heaven/images/shiba-inu.png">
+    
+  <!-- SCRIPTS / BOOTSTRAP ////////////////////////////////////////////////////////-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    
+  <!-- SCRIPTS / CUSTOMISATION ////////////////////////////////////////////////////////-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
   <link rel="stylesheet" href="/shikas-heaven/css/wiki-html.css">
+
+
+  <!-- META SITE PREVIEW ////////////////////////////////////////////////////////-->
+  <meta property="og:title" content="Shika's Heaven | Wiki">
+  <meta name="twitter:title" content="Shika's Heaven | Wiki">
+
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:description" content="">
+    
+  <meta property="og:image" content="/shikas-heaven/images/shiba-inu.png">
+  <meta name="twitter:image" content="/shikas-heaven/images/shiba-inu.png">
+ 
 </head>
 <body>
-        <!--NAVIGATION BAR-->
-        <nav class="SH-navbar navbar sticky-top navbar-expand-lg bg-teal navbar-light shadow-sm p-2 ">
+        <!-- NAVIGATION BAR ////////////////////////////////////////////////////////-->
+        <nav class="SH-navbar navbar navbar-expand-sm navbar-dark justify-content-center nva-pills ">
             <a class="navbar-brand" href="/shikas-heaven/index.html">
-                <img src="/shikas-heaven/images/shiba-inu.png" width="30" class="d-inline-block align-top" alt="">
-                Shika's Heaven
+                <img src="/shikas-heaven/images/shiba-inu.png" width="40" class="d-inline-block align-top" alt="Shiba Head Logo">
             </a>
                 <ul class="navbar-nav">
-                    <li class="new-item">
+                    <li class="nav-item">
                         <a class="nav-link SH-another-hover" href="/shikas-heaven/updates.html">Updates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#NotWorkingyet">Wiki</a>
+                        <a class="nav-link active" href="/shikas-heaven/wiki.html">Wiki</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link SH-another-hover" href="#NotWorkingyet">Voting</a>
+                        <a class="nav-link SH-another-hover" href="#notworkingyet">Voting</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link SH-another-hover" href="/shikas-heaven/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link SH-another-hover" href="/shikas-heaven/report.html">Report</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link SH-another-hover" href="/shikas-heaven/about.html">About</a>
@@ -40,15 +64,15 @@
                     </li>
                 </ul>
         </nav>
-        <!--ENDE-->
+        <!-- ENDE ////////////////////////////////////////////////////////-->
         
-        <!--SIDEBAR-->
+        <!-- SIDEBAR / CATEGORIES ETC.  ////////////////////////////////////////////////////////-->
         <div class="wrapper">
             <nav id="sidebar">
         
+                <!-- BEGINNING GUIDE  ////////////////////////////////////////////////////////-->
                 <ul class="list-unstyled components">
-                    
-                    <li class="active">
+                    <li>
                         <a href="#Beginners" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Beginning Guide</a>
                         <ul class="collapse list-unstyled" id="Beginners">
                             <li>
@@ -62,9 +86,13 @@
                             </li>
                         </ul>
                     </li>
+                    <!-- ENDE BEGINNING GUIDE  //////////////////////////////////////////////////////// -->
 
+                    <!-- //////////////////////////////////////////////////////// -->
+
+                    <!-- NEW BEGINNING v0.1  //////////////////////////////////////////////////////// -->
                         <li>
-                            <a href="#Reworked-Stuff" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">New Beggining 0.1v</a>
+                            <a href="#Reworked-Stuff" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">New Beginning 0.1v</a>
                             <ul class="collapse list-unstyled" id="Reworked-Stuff">
                                 <li>
                                     <a id="content-highligh-hover" href="#" onclick="document.getElementById('iframe-content-id').src='/shikas-heaven/wiki/wiki_reworked_armor.html'; console.log('Iframe has been Updated!')">Reworked Armor</a>
@@ -91,11 +119,40 @@
                                     <a id="content-highligh-hover" href="#">New Ores</a>
                                 </li>
                                 <li>
+                    <!-- ABILITIES  //////////////////////////////////////////////////////// -->
                                     <a href="#Abilities" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Abilities</a>
                                     <ul class="collapse list-unstyled" id="Abilities">
                                         <li>
-                                            <a id="content-highligh-hover" href="#">Wizard</a>
-                                        </li>
+                                            <a href="#Wizard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Wizard</a>
+                                            <ul class="collapse list-unstyled" id="Wizard">
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Light Fireball Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Medium Fireball Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Large Fireball Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Light Fire Rain Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Medium Fire Rain Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Very Light Stun Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Light Stun Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a id="content-highligh-hover" href="#">Slow Spell</a>
+                                                </li>
+                                                <li>
+                                                    <a class="border-bottom SH-border-black" id="content-highligh-hover" href="#">Medium Slow Spell</a>
+                                                </li>
+                                            </ul>
                                         <li>
                                             <a id="content-highligh-hover" href="#">Priest</a>
                                         </li>
@@ -124,7 +181,7 @@
                                 </li>
                             </ul>
                         </li>
-                    
+                    <!-- ENDE ABILITIES  //////////////////////////////////////////////////////// -->
                        
                         </ul>
                     </li>
@@ -132,25 +189,25 @@
             </nav>
         
         
-            <!--ENDE-->
+            <!-- ENDE SIDEBAR  //////////////////////////////////////////////////////// -->
 
 
-        <!-- Page Content  -->
+        <!-- RIGHTSIDE PAGE CONTENT / IFRAME  //////////////////////////////////////////////////////// -->
 
         <div id="content">
 
-            <iframe id="iframe-content-id"  src="/shikas-heaven/wiki/wiki_nb0.1_new_weapons.html" class="SH-iframe-mid-content position-relative"></iframe>
+            <iframe id="iframe-content-id"  src="/shikas-heaven/wiki/wiki_start_classes.html" class="SH-iframe-mid-content position-relative"></iframe>
 
         </div>
     </div>
 
-        <!--ENDE-->
+        <!-- ENDE RIGHTSIDE PAGE CONTENT  //////////////////////////////////////////////////////// -->
         
 
-        <!--BOTTOM BAR-->
+        <!-- BOTTOM OF THE SITE  //////////////////////////////////////////////////////// -->
         <div class="SH-bottom-bar navbar bottom-auto navbar-dark position-relative">
             <a class="SH-hosted-by navbar-collapse navbar-brand" href="https://github.com/KamilBura">Hosted by Github <img src="/shikas-heaven/images/kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png" width="40px" height="40px"></a>
         </div>
-        <!--ENDE-->
+        <!-- ENDE BOTTOM OF THE SIDE  //////////////////////////////////////////////////////// -->
 </body>
 </html>

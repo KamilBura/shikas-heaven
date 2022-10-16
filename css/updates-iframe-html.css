@@ -6,23 +6,24 @@ body {
 h1 {
     position: relative;
     text-align: center;
-    top: 2rem;
-}
-
-.p {
-    float: left;
-    top: 4rem;
-    font-size: 32px;
-    font-weight: 600;
-    margin-left: 30px;
+    padding: 1.5rem;
+    background-color: #1D263B;
+    color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .SH-main-text {
+    max-width: 1550px;
+    background-color: #5C6784;
+    color: #A0EADE;
     font-size: 32px;
     font-weight: 600;
     text-align: start;
     top: 2rem;
     left: 2rem;
+    border-radius: 5px;
+    padding: 0.2rem;
 }
 
 .SH-under-main-text {

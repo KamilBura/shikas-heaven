@@ -1,3 +1,18 @@
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
+
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -6,7 +21,6 @@ body {
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes body-ann {
@@ -15,25 +29,63 @@ body {
     
 }
 
+/* ENDE BASE */
+
+/*-----------*/
+
+/* NAVBAR CSS*/
+
 .SH-navbar {
-    background-color: #76FFC3 !important;
+    background-color: transparent !important;
+    z-index: 1000;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #5C6784;
+    background-color: #1D263B !important;
 }
 
-.SH-bottom-bar {
-    background-color: #43B182;
-    z-index: 2;
+.nav-link {
+    border-bottom: 1px solid white !important;
+    border-radius: 3px;
 }
 
-.SH-hosted-by {
-    text-align: right !important;
+.SH-another-hover:hover {
+    color: #A0EADE!important;
+    border-bottom-width: 5px !important;
+    transition: 0.2s ease-in-out !important;
 }
+
+.SH-another-hover {
+    transition: 0.2s ease-in-out !important;
+}
+
+.nav-link {
+    color: #5C6784 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    padding-right: 1rem !important;
+}
+
+li.nav-link, .active {
+    color: #A0EADE !important;
+}
+
+a.navbar-brand, ul.navbar-nav {
+    margin-bottom: 0.5rem;
+}
+
+/* ENDE NAVBAR */
+
+/*-------------*/
+
+/* LEFTSIDE CATEGORY PANEL / MID CONTENT IFRAME */
 
 .SH-mid-content {
     height: 95vh;
-    background-color: red;
 }
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -51,16 +103,7 @@ a:focus {
     transition: all 0.3s;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/* SIDEBAR STYLE */
 
 .wrapper {
     display: flex;
@@ -69,10 +112,10 @@ a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #76FFC3;
-    color: #000;
+    min-width: 220px;
+    max-width: 220px;
+    background: #1D263B;
+    color: white;
     transition: all 0.3s;
 }
 
@@ -80,42 +123,39 @@ a:focus {
     margin-left: -250px;
 }
 
-#sidebar .sidebar-header {
-    padding: 20px 10px;
-    background: #43B182;
-}
-
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #43B182;
+    border-bottom: 1px solid #5C6784;
 }
 
 #sidebar ul p {
-    color: #000;
-    padding: 10px;
+    color: white;
+    padding: 5px;
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 1.1em;
     display: block;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #000;
-    background: #43B182;
+    color: white;
+    background: #5C6784;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 li a#content-highligh-hover:hover {
-    background-color: #43B182;
+    background-color: #A0EADE;
     transition: 0.2s ease-in-out;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
+/* CONTENT STYLE */
 
 #content {
     width: 100%;
@@ -124,9 +164,7 @@ li a#content-highligh-hover:hover {
     transition: all 0.3s;
 }
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
+/* MEDIAQUERIES */
 
 @media (max-width: 768px) {
     #sidebar {
@@ -142,5 +180,26 @@ li a#content-highligh-hover:hover {
 
 .SH-iframe-mid-content {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 }
+
+.SH-border-black {
+    border-color: #43B182 !important;
+}
+
+/* ENDE LEFTSIDE PANEL / IFRAME MID CONTENT */
+
+/*-----------*/
+
+/* BOTTOM BAR */
+
+.SH-bottom-bar {
+    background-color: #1D263B;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+/* ENDE BOTTOM BAR */
