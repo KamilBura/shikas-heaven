@@ -1,3 +1,16 @@
+
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -15,17 +28,60 @@ body {
     
 }
 
+/* ENDE BASE */
+
+/*-----------*/
+
+/* NAVBAR CSS*/
+
 .SH-navbar {
-    background-color: #76FFC3 !important;
+    background-color: transparent !important;
+    margin-bottom: 0.5rem;
+    z-index: 1000;
 }
+
+.nav-link {
+    border-bottom: 1px solid white !important;
+    border-radius: 3px;
+}
+
+.SH-another-hover:hover {
+    color: #A0EADE!important;
+    border-bottom-width: 5px !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.SH-another-hover {
+    transition: 0.2s ease-in-out !important;
+}
+
+.nav-link {
+    color: #5C6784 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    padding-right: 1rem !important;
+}
+
+li.nav-link, .active {
+    color: #A0EADE !important;
+}
+
+a.navbar-brand, ul.navbar-nav {
+    margin-bottom: 0.5rem;
+}
+
+/* ENDE NAVBAR */
+
+/*-------------*/
+
+/* MIDCONTENT / VIDEO */
 
 .SH-mid-content {
     height: 95vh;
     z-index: 2;
-}
-
-.SH-another-hover:hover {
-    color: black !important;
 }
 
 .SH-mid-content-video {
@@ -47,17 +103,12 @@ body {
     bottom: -30rem;
 }
 
-@font-face {
-    font-family: NG-B;
-    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
-}
-
 .SH-name {
     font-size: 64px;
     font-family: NG-B !important;
     font-weight: 600;
-    top: 17rem;
     left: 4rem;
+    top: 20rem;
     animation-name: name-ann;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -69,7 +120,7 @@ body {
     font-size: 18px;
     font-family: NG-B !important;
     font-weight: 600;
-    top: 16.5rem;
+    top: 25rem;
     left: 10rem;
     animation-name: name-ann;
     animation-duration: 3s;
@@ -79,23 +130,22 @@ body {
     visibility: hidden;
 }
 
+/* MIDCONTENT / VIDEO KEYFRAME*/
+
 @keyframes name-ann {
     0% {left: -200rem;visibility: hidden;}
     100% {left: "";visibility: visible;}
     
 }
 
-.SH-bottom-bar {
-    background-color: #43B182;
-    z-index: 2;
-}
+/* ENDE MIDCONTENT / VIDEO + KEYFRAME*/
 
-.SH-hosted-by {
-    text-align: right !important;
-}
+/*-----------------------------------*/
+
+/* LEFTSIDE + RIGHTSIDE */
 
 .SH-leftside, .SH-rightside {
-    height:570vh;
+    height:580vh;
     width:100%;
 }
 
@@ -105,17 +155,19 @@ body {
     visibility: visible;
 }
 
+.SH-rightside {
+    background-color: transparent;
+    transition: all 0.5s linear;
+    visibility: visible;
+}
+
+/* LEFTSIDE + RIGHTSIDE ANIMATION */
+
 .leftside-ann {
     animation-name: sleftside-ann;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 
-}
-
-.SH-rightside {
-    background-color: transparent;
-    transition: all 0.5s linear;
-    visibility: visible;
 }
 
 .rightside-ann {
@@ -134,424 +186,114 @@ body {
     100% {left: 0rem; visibility: visible;} 
 }
 
+/* ENDE LEFTSIDE + RIGHTSIDE / ANIMATION */
+
+/*---------------------------------------*/
+
+/* ABOUT SERVER */
+
 .SH-aboutserver-content {
     z-index: 222 !important;
-    height: 570vh;
-    background-color: #3b3b3b !important;
+    height: 580vh;
+    background-color: #1D263B !important;
     box-shadow: 1px 1px 10px ;
 }
 
-.SH-leftside-customprefix {
+.SH-leftside-rightside-pause {
+    padding-bottom: 25rem;
+}
+
+/* LEFTSIDE / MAINTEXT / UNDERTEXT / IMG */
+
+.SH-leftside-customprefix, 
+.SH-leftside-death, 
+.SH-leftside-damageind,
+.SH-leftside-hologramm,
+.SH-leftside-bosses,
+.SH-leftside-level,
+.SH-leftside-items,
+.SH-leftside-mobslevel {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
     color: white;
     text-align: center;
-    top: 2rem;
     visibility: hidden;
-
 }
 
-.SH-leftside-undertext-customprefix {
+.SH-leftside-undertext-customprefix, 
+.SH-leftside-undertext-death, 
+.SH-leftside-undertext-damageind,
+.SH-leftside-undertext-hologramm,
+.SH-leftside-undertext-bosses,
+.SH-leftside-undertext-level,
+.SH-leftside-undertext-items,
+.SH-leftside-undertext-mobslevel {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
     color: white;
     text-align: center;
-    top: 1.5rem;
     visibility: hidden;
-
 }
 
-.SH-leftside-customprefix-img {
-    display: block;
+.SH-leftside-customprefix-img, 
+.SH-leftside-death-img, 
+.SH-leftside-damageind-img,
+.SH-leftside-hologramm-img,
+.SH-leftside-bosses-img,
+.SH-leftside-level-img,
+.SH-leftside-items-img,
+.SH-leftside-mobslevel-img {
+    display: flex;
     margin-left:auto;
     margin-right:auto;
     width: 40%;
     top: 1rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    box-shadow: 2px 2px 2px #5C6784;
     visibility: hidden;
 }
 
-.SH-rightside-backpacks {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 15rem;
-    visibility: hidden;
-}
+/* ENDE */
 
-.SH-rightside-undertext-backpacks {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 14.5rem;
-    visibility: hidden;
-}
+/*----------*/
 
-.SH-rightside-backpacks-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
+/* RIGHTSIDE / MAINTEXT / UNDERTEXT / IMG */
 
-.SH-leftside-death {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 20rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-death {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 19.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-death-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-rightside-customblocks {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 30rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-undertext-customblocks {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 29.5rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-customblocks-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 50%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    visibility: hidden;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-}
-
-.SH-leftside-damageind {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 40rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-damageind {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 39.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-damageind-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 50%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-rightside-customenchant {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 50rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-undertext-customenchant {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 49.5rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-customenchant-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 50%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-leftside-hologramm {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 60rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-hologramm {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 59.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-hologramm-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 50%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-rightside-bar {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 70rem;
-    visibility: hidden;
-}
-
-.SH-rightside-undertext-bar {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 69.5rem;
-    visibility: hidden;
-}
-
-.SH-rightside-bar-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-leftside-bosses {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 80rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-bosses {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 79.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-bosses-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-rightside-classes {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 85rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-undertext-classes {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 84.5rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-classes-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-leftside-level {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 110rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-level {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 109.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-level-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
+.SH-rightside-backpacks,
+.SH-rightside-bar,
+.SH-rightside-classes,
+.SH-rightside-customblocks,
+.SH-rightside-customenchant,
 .SH-rightside-playerinf {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
     color: white;
     text-align: center;
-    top: 110rem;
-    visibility: hidden;
-
+    visibility: hidden; 
 }
 
+.SH-rightside-undertext-backpacks,
+.SH-rightside-undertext-bar,
+.SH-rightside-undertext-classes,
+.SH-rightside-undertext-customblocks,
+.SH-rightside-undertext-customenchant,
 .SH-rightside-undertext-playerinf {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
     color: white;
     text-align: center;
-    top: 109.5rem;
     visibility: hidden;
-
 }
 
+.SH-rightside-backpacks-img,
+.SH-rightside-bar-img,
+.SH-rightside-classes-img,
+.SH-rightside-customblocks-img,
+.SH-rightside-customenchant-img,
 .SH-rightside-playerinf-img {
     display: block;
     margin-left:auto;
@@ -562,81 +304,11 @@ body {
     overflow: hidden;
     top: 1rem;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
+    box-shadow: 2px 2px 2px #5C6784;
     visibility: hidden;
 }
 
-.SH-leftside-items {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 130rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-undertext-items {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 129.5rem;
-    visibility: hidden;
-
-}
-
-.SH-leftside-items-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
-
-.SH-rightside-mobslevel {
-    font-size: 64px;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 130rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-undertext-mobslevel {
-    font-size: 20px !important;
-    font-family: NG-B;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    top: 129.5rem;
-    visibility: hidden;
-
-}
-
-.SH-rightside-mobslevel-img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
-    overflow: hidden;
-    top: 1rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(146, 146, 146);
-    visibility: hidden;
-}
+/* LEFTSIDE + RIGHTSIDE ANNIMATION = JAVASCRIPT observer.js */
 
 @keyframes text-ann-right {
     0% {left:200rem;visibility: hidden;}
@@ -662,26 +334,53 @@ body {
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+/* ENDE LEFTSIDE + RIGHTSIDE... */
+
+/*------------------------*/
+
+/* UNDER ABOUT LEFTSIDE RIGHTSIDE JOIN FORM */
+
 .SH-under-about-content {
     height: 60vh;
-    background-color: #90FECD;
+    background-color: #4CB963;
 }
 
 .SH-under-about-text {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
-    color: #40c583;
+    color: #157F1F;
     top: 5rem;
 }
 
 .SH-under-about-button {
     padding: 1.5rem 5rem;
     top: 8rem;
-    background-color: #43B182 !important;
-    color: white;
+    background-color: #157F1F !important;
+    color: white !important;
+    transition: 0.3s ease-in-out;
 }
 
 .SH-under-about-button:hover {
-    color: #76FFC3;
+    color: #4CB963 !important;
+    transition: 0.3s ease-in-out;
 }
+
+/* ENDE JOIN FORM */
+
+/*---------------*/
+
+/* SITE BOTTOM / HOSTED INFORMATION ETC. */
+
+.SH-bottom-bar {
+    background-color: #157F1F;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+/* ENDE SITE BOTTOM */
+
+/* ENDE OF CSS */

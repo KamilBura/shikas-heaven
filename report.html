@@ -1,3 +1,5 @@
+<?php include 'sentMail.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +17,19 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
-    
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
   <!-- SCRIPTS / CUSTOMISATION ////////////////////////////////////////////////////////-->
-  <link rel="stylesheet" href="/shikas-heaven/css/index-html.css">
-  <script src="/shikas-heaven/js/observer.js"></script>
+  <link rel="stylesheet" href="/shikas-heaven/css/report-html.css">
+  <script src="/shikas-heaven/js/look-if-empty.js"></script>
     
     <!-- META SITE PREVIEW ////////////////////////////////////////////////////////-->
-    <meta property="og:title" content="Shika's Heaven | Index">
-    <meta name="twitter:title" content="Shika's Heaven | Index">
+    <meta property="og:title" content="Shika's Heaven | Report">
+    <meta name="twitter:title" content="Shika's Heaven | Report">
   
-    <meta name="description" content="">
-    <meta property="og:description" content="">
-    <meta name="twitter:description" content="">
+    <meta name="description" content="Found a bug/game-breaking or Cheater, Report him here!">
+    <meta property="og:description" content="Found a bug/game-breaking or Cheater, Report him here!">
+    <meta name="twitter:description" content="Found a bug/game-breaking or Cheater, Report him here!">
     
     <meta property="og:image" content="/shikas-heaven/images/shiba-inu.png">
     <meta name="twitter:image" content="/shikas-heaven/images/shiba-inu.png">
@@ -53,7 +55,7 @@
                         <a class="nav-link SH-another-hover" href="/shikas-heaven/events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link SH-another-hover" href="/shikas-heaven/report.html">Report</a>
+                        <a class="nav-link active" href="/shikas-heaven/report.html">Report</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link SH-another-hover" href="/shikas-heaven/about.html">About</a>
@@ -63,15 +65,55 @@
                     </li>
                 </ul>
         </nav>
-        <!--ENDE-->
+        <!-- ENDE ////////////////////////////////////////////////////////-->
 
-        <!-- UNDER NAVIGATION BAR / NAME / TEXT DOWNUNDER-->
+        <!-- UNDER NAVIGATION BAR / NAME / TEXT DOWNUNDER ////////////////////////////////////////////////////////-->
         <div class="SH-mid-content position-relative container-fluid d-block bg-body shadow-sm">
-            <div class="SH-site-name position-relative whitespace-nowrap text-white">Welcome on <span class="SH-color-gray whitespace-nowrap text-decoration-none user-select-none">Shika's Heaven</span></div>
-            <div class="SH-undersite-text position-relative whitespace-nowrap text-white">Site created by <a href="/shikas-heaven/about.html" class="SH-name-color-whitegray whitespace-nowrap text-decoration-none">@Kamil Bura</a> for a Game Server and for Public use. Site is hosted by <a href="https://github.com/KamilBura" class="SH-name-color-whitegray whitespace-nowrap text-decoration-none">@Github</a>.</div>
+
+            <!-- REPORT FORM START ////////////////////////////////////////////////////////-->
+             <form id="report-form" name="report-form" accept-charset="utf-8" action="https://formspree.io/f/mvoyqezk" method="POST">
+                
+                <fieldset id="report-form-inputs">
+
+                    <div class="position-relative SH-report-up-name">Report Form</div>
+                  
+                    <label for="ingame-name" class=""></label>
+                  
+                    <input class="btn btn-lg btn-light SH-name-btn position-relative" type="text" name="ingame-name" id="full-name" placeholder="In-Game Nickname" required="">
+                  
+                    <label for="email-address"></label>
+                  
+                    <input class="btn btn-lg btn-light SH-name-btn position-relative" type="email" name="_replyto" id="email-address" placeholder="your-email@domain.com" required="">
+                  
+                    <fieldset id="report-form-selects">
+
+                    <label for="Reason"></label>
+
+                    <select class="btn btn-lg btn-light SH-name-btn position-relative" name="reason" id="reason" required="">
+                      <option value="" selected="" disabled="">Choose Reason</option>
+                      <option value="Bug/Game-Breaking">Bug/Game-Breaking</option>
+                      <option value="Dupe">Dupe</option>
+                      <option value="Cheater">Cheater</option>
+                      <option value="Idee/Balance">Idee/Balance</option>
+                    </select>
+
+                  </fieldset>
+                  
+                  <label for="message"></label>
+                  
+                  <textarea class="btn btn-lg btn-light SH-name-btn position-relative" rows="6" name="message" id="message" placeholder="tell me more about your problem." required=""></textarea>
+                  
+                  <input type="hidden" name="_subject" id="email-subject" value="REPORT | Shika's Heaven">
+                  
+                  <button id="submit-btn" class="btn btn-lg btn-light SH-submit-btn position-relative" type="submit" 
+                  onclick="validateForm();">Submit</button>
+
+                </fieldset>
+
+
+              </form>
+
         </div>
-
-
         <!--BOTTOM BAR-->
         <div class="SH-bottom-bar navbar bottom-auto navbar-dark">
             <a class="SH-hosted-by navbar-collapse navbar-brand" href="https://github.com/KamilBura">Hosted by Github <img src="/shikas-heaven/images/kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png" width="40px" height="40px"></a>

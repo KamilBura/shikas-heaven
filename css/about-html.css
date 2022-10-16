@@ -1,3 +1,17 @@
+
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
+
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -15,53 +29,105 @@ body {
     
 }
 
+/* ENDE BASE */
+
+/*-----------*/
+
+/* NAVBAR CSS*/
+
 .SH-navbar {
-    background-color: #76FFC3 !important;
+    background-color: transparent !important;
+    margin-bottom: 0.5rem;
+    z-index: 1000;
 }
 
-.SH-mid-content {
-    height: 55rem;
-    animation-name: SH-mid-content;
-    visibility: hidden;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    z-index: 2;
+.nav-link {
+    border-bottom: 1px solid #1D263B !important;
+    border-radius: 3px;
+}
+
+.SH-another-hover:hover {
+    color: #A0EADE!important;
+    border-bottom-width: 5px !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.SH-another-hover {
+    transition: 0.2s ease-in-out !important;
+}
+
+.nav-link {
+    color: #5C6784 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    padding-right: 1rem !important;
+}
+
+li.nav-link, .active {
+    color: #A0EADE !important;
+}
+
+a.navbar-brand, ul.navbar-nav {
+    margin-bottom: 0.5rem;
+}
+
+/* ENDE NAVBAR */
+
+/*-------------*/
+
+/* LEFTSIDE + RIGHTSIDE = UP */
+
+.SH-leftside-up, .SH-rightside-up {
+    height: 95vh;
 }
 
 .SH-md-gif {
     top: 12rem;
-    left: 18rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 1px 1px 10px inset gray;
     border-radius: 10px;
     border-bottom-style: solid ;
-    border-color: #90FECD;
+    border-color: #A0EADE;
     border-width: 8px ;
-}
-
-.SH-another-hover:hover {
-    color: black !important;
-
-}
-
-@font-face {
-    font-family: NG-B;
-    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: SH-mid-content;
+    animation-duration: 2s;
+    transition: 2s ease-in-out;
 }
 
 .SH-name {
     font-size: 64px;
     font-family: NG-B !important;
     font-weight: 600;
-    margin-left: 40rem;
-    margin-top: -10rem;
+    top: 12rem;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: SH-mid-content;
+    animation-duration: 2s;
+    transition: 2s ease-in-out;
 }
 
 .SH-text-under-name {
     font-size: 20px;
     font-family: NG-B !important;
     font-weight: 600;
-    margin-left: 40rem;
+    top: 13rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: SH-mid-content;
+    animation-duration: 2s;
+    transition: 2s ease-in-out;
 }
+
+/* KEYFRAME */
 
 @keyframes SH-mid-content {
     0% {right: 200rem; visibility: visible;}
@@ -69,14 +135,11 @@ body {
     
 }
 
-.SH-bottom-bar {
-    background-color: #43B182;
-    z-index: 2;
-}
+/* ENDE LEFTSIDE + RIGHTSIDE */
 
-.SH-hosted-by {
-    text-align: right !important;
-}
+/*------------------*/
+
+/* LEFTSIDE RIGHTSIDE / SOCIAL MEDIA / DISCORD*/
 
 .SH-leftside, .SH-rightside {
     height:75vh;
@@ -84,7 +147,7 @@ body {
 }
 
 .SH-leftside {
-    background-color: #90FECD;
+    background-color: #4CB963;
     transition: all 0.5s linear;
     visibility: hidden;
 }
@@ -99,6 +162,7 @@ body {
 .SH-rightside {
     transition: all 0.5s linear;
     visibility: hidden;
+    background-color: #1D263B;
 }
 
 .rightside-ann {
@@ -117,8 +181,22 @@ body {
     box-shadow: -1px 0px 10px black;
     transition: all 0.5s linear;
     z-index: 1;
-
+    
 }
+
+/* KEYFRAME */
+
+@keyframes leftside-ann {
+    0% {right: 200rem; visibility: hidden;}
+    100% {right: 0rem; visibility: visible;} 
+}
+
+@keyframes rightside-ann {
+    0% {left: 200rem; visibility: hidden;}
+    100% {left: 0rem; visibility: visible;} 
+}
+
+/* DISCORD */
 
 .SH-discord-text {
     font-size: 46px;
@@ -145,9 +223,11 @@ body {
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-
-
 }
+
+/* ENDE DISCORD */
+
+/* EASTEREGG :D */
 
 .SH-discord-egg {
     bottom: 0rem;
@@ -166,78 +246,41 @@ body {
     
 }
 
+/* ENDE EASTEREGG :D */
+
+
+/* SOCIAL MEDIA */
+
 .SH-socialmedia-text {
     font-size: 46px;
     top: 2.5rem;
     font-weight: 600;
 }
 
-.SH-facebook-img {
-    border-radius: 8px;
-    object-fit: fill;
-    cursor: pointer;
-    margin: 5px;
-    max-width: 11rem;
-    padding-right: 0rem;
-    width: 2.5rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 1 !important;
-}
-
-.SH-steam-img {
-    border-radius: 8px;
-    object-fit: fill;
-    background-color: black;
-    max-width: 11rem;
-    padding-right: 0rem;
-    margin: 5px;
-    width: 2.5rem;
-    transition: all 0.5s ease-in-out;
-}
-
-.SH-instagram-img {
-    border-radius: 8px;
-    object-fit: fill;
-    max-width: 11rem;
-    padding-right: 0rem;
-    margin: 5px;
-    width: 2.5rem;
-    transition: all 0.5s ease-in-out;
-}
-
-.SH-twitch-img {
-    border-radius: 8px;
-    object-fit: cover;
-    max-width: 11rem;
-    padding-right: 0rem;
-    margin: 5px;
-    width: 2.5rem;
-    transition: all 0.5s ease-in-out;
-}
-
+.SH-facebook-img, 
+.SH-steam-img,
+.SH-instagram-img,
+.SH-twitch-img,
 .SH-tiktok-img {
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: fill;
+    margin: 5px;
     max-width: 11rem;
     padding-right: 0rem;
-    margin: 5px;
     width: 2.5rem;
     transition: all 0.5s ease-in-out;
+    z-index: 1000 !important;
 }
 
-.SH-tiktok-img:hover, .SH-facebook-img:hover, .SH-twitch-img:hover, .SH-instagram-img:hover, .SH-steam-img:hover {
+.SH-tiktok-img:hover, 
+.SH-facebook-img:hover, 
+.SH-twitch-img:hover, 
+.SH-instagram-img:hover, 
+.SH-steam-img:hover {
     cursor: pointer;
 }
 
-@keyframes leftside-ann {
-    0% {right: 200rem; visibility: hidden;}
-    100% {right: 0rem; visibility: visible;} 
-}
-
-@keyframes rightside-ann {
-    0% {left: 200rem; visibility: hidden;}
-    100% {left: 0rem; visibility: visible;} 
-}
+/* SOCIAL MEDIA BACKGROUND COLOR */
 
 .SH-facebook-bg {
     background-color: #1B3562;
@@ -284,25 +327,20 @@ body {
     cursor: pointer;
 }
 
+/* ENDE BACKGROUND */
+
+/* SOCIAL MEDIA HOVER SECTION */
+
 div.SH-twitch-bg:hover > img.SH-twitch-img {
     width: 5rem;
     transition: all 0.5s ease-in-out;
     margin: 8px;
 }
 
-div.SH-twitch-bg:hover {
-    height: 6rem;
-}
-
-
 div.SH-instagram-bg:hover > img.SH-instagram-img {
     width: 5rem;
     transition: all 0.5s ease-in-out;
     margin: 8px;
-}
-
-div.SH-instagram-bg:hover {
-    height: 6rem;
 }
 
 div.SH-steam-bg:hover > img.SH-steam-img {
@@ -311,18 +349,10 @@ div.SH-steam-bg:hover > img.SH-steam-img {
     margin: 8px;
 }
 
-div.SH-steam-bg:hover {
-    height: 6rem;
-}
-
 div.SH-facebook-bg:hover > img.SH-facebook-img {
     width: 5rem;
     transition: all 0.5s ease-in-out;
     margin: 8px;
-}
-
-div.SH-facebook-bg:hover {
-    height: 6rem;
 }
 
 div.SH-tiktok-bg:hover > img.SH-tiktok-img {
@@ -331,9 +361,17 @@ div.SH-tiktok-bg:hover > img.SH-tiktok-img {
     margin: 8px;
 }
 
+div.SH-twitch-bg:hover,
+div.SH-instagram-bg:hover,
+div.SH-steam-bg:hover,
+div.SH-facebook-bg:hover,
 div.SH-tiktok-bg:hover {
     height: 6rem;
 }
+
+/* ENDE HOVER SECTION */
+
+/* SOCIAL MEDIA TEXT TYPE / COLOR */
 
 div.SH-facebook-text {
     color: white;
@@ -353,32 +391,6 @@ div.SH-facebook-text {
     color: #3a6eff;
     font-weight: 600;
     user-select: none;
-}
-
-.SH-facebook-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-facebook-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-
-.SH-steam-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-steam-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
 }
 
 div.SH-steam-text {
@@ -401,19 +413,6 @@ div.SH-steam-text {
     user-select: none;
 }
 
-.SH-instagram-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-instagram-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-
 div.SH-instagram-text {
     color: white;
     font-family: NG-B;
@@ -432,19 +431,6 @@ div.SH-instagram-text {
     color: #fc4a4a;
     font-weight: 600;
     user-select: none;
-}
-
-.SH-twitch-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-twitch-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
 }
 
 div.SH-twitch-text {
@@ -467,19 +453,6 @@ div.SH-twitch-text {
     user-select: none;
 }
 
-.SH-tiktok-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-tiktok-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-
 div.SH-tiktok-text {
     color: white;
     font-family: NG-B;
@@ -494,6 +467,31 @@ div.SH-tiktok-text {
     z-index: 1000 !important;
 }
 
+/* SOCIAL MEDIA ANIMATION / IN - OUT */
+
+.SH-facebook-text.in,
+.SH-steam-text.in,
+.SH-instagram-text.in,
+.SH-twitch-text.in,
+.SH-tiktok-text.in {
+    animation-name: socialmedia-name-text-ann;
+    animation-duration: 0.8s;
+    visibility: visible;
+}
+
+.SH-facebook-text.out,
+.SH-steam-text.out,
+.SH-instagram-text.out,
+.SH-twitch-text.out, 
+.SH-tiktok-text.out {
+    animation-name: socialmedia-name-text-ann-out;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+/* KEYFRAME */
+
 @keyframes socialmedia-name-text-ann {
     0% {right: 50rem;visibility: hidden;}
     100% {right: 14rem;visibility: visible;}  
@@ -503,4 +501,20 @@ div.SH-tiktok-text {
     0% {right: 14rem;visibility: visible;}  
     100% {right: 50rem;visibility: hidden;}
 }
+
+/* ENDE LEFTSIDE RIGHTSIDE SOCIALMEDIA / DISCORD */
+
+/* BOTTOM THE SITE */
+
+.SH-bottom-bar {
+    background-color: #157F1F;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+/* ENDE BOTTOM */
+
 

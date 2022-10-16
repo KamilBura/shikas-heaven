@@ -1,0 +1,110 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 3px solid #1D263B;
+    background-color: #5C6784;
+}
+
+.SH-leftside, .SH-rightside {
+    top: -8px;
+    height: 90vh;
+
+}
+
+div.SH-leftside > .mainitem-name {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 32px;
+    border-bottom: 3px solid #1D263B;
+    border-bottom-right-radius: 5px;
+    background-color: #5C6784;
+}
+
+div.SH-leftside > .item-statistic-img {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    max-width: 350px;
+}
+
+div.SH-leftside > .item-crafting-img {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    max-width: 450px;
+}
+
+div.SH-rightside > .mainitem-name-description {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 28px;
+    border-bottom: 3px solid #1D263B;
+    background-color: #5C6784;
+}
+
+div.SH-rightside > .stats-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgb(244 ,244, 244, 0.6);
+    border-bottom-left-radius: 5px;
+}
+
+div.SH-leftside > .mainitem-name-crafting {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 1rem;
+    border-bottom: 3px solid #1D263B;
+    border-top-right-radius: 5px;
+    background-color: #5C6784;
+}
+
+div.SH-leftside > .mainitem-need-to-craft {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    padding: 2rem;
+    border-bottom: 3px solid #1D263B;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #5C6784;
+}
+
+div.SH-leftside > .item-need-to-craft {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+div.SH-rightside > .mainitem-tipps-description {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 3px solid #1D263B;
+    background-color: #5C6784;
+}
+
+div.SH-rightside > .tipps-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgb(244 ,244, 244, 0.6);
+}
