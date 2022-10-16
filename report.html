@@ -1,5 +1,3 @@
-<?php include 'sentMail.php';?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +5,7 @@
   <!-- BASIC ////////////////////////////////////////////////////////-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shika's Heaven | About</title>
+  <title>Shika's Heaven | Report</title>
     
   <!-- SITE LOGO ////////////////////////////////////////////////////////-->
   <link rel="icon" type="image/x-icon" href="/shikas-heaven/images/shiba-inu.png">
@@ -79,37 +77,34 @@
                   
                     <label for="ingame-name" class=""></label>
                   
-                    <input class="btn btn-lg btn-light SH-name-btn position-relative" type="text" name="ingame-name" id="full-name" placeholder="In-Game Nickname" required="">
+                    <input class="btn-lg btn-light SH-name-btn position-relative form-control" type="text" name="ingame-name" id="full-name" placeholder="In-Game Nickname" required="">
                   
                     <label for="email-address"></label>
                   
-                    <input class="btn btn-lg btn-light SH-name-btn position-relative" type="email" name="_replyto" id="email-address" placeholder="your-email@domain.com" required="">
+                    <input class="btn-light btn-lg SH-name-btn position-relative form-control" type="email" name="_replyto" id="email-address" placeholder="your-email@domain.com" required="">
                   
                     <fieldset id="report-form-selects">
 
-                    <label for="Reason"></label>
+                    <label for="reason"></label>
 
                     <select class="btn btn-lg btn-light SH-name-btn position-relative" name="reason" id="reason" required="">
                       <option value="" selected="" disabled="">Choose Reason</option>
                       <option value="Bug/Game-Breaking">Bug/Game-Breaking</option>
-                      <option value="Dupe">Dupe</option>
-                      <option value="Cheater">Cheater</option>
-                      <option value="Idee/Balance">Idee/Balance</option>
+                      <option value="Duping">Duping</option>
+                      <option value="Cheating">Cheating</option>
+                      <option value="Idee/Balance">Idea/Balance</option>
+                      <option value="Beta Tester | Report">ONLY FOR BETA TESTERS</option>
                     </select>
-
-                  </fieldset>
                   
                   <label for="message"></label>
                   
-                  <textarea class="btn btn-lg btn-light SH-name-btn position-relative" rows="6" name="message" id="message" placeholder="tell me more about your problem." required=""></textarea>
+                  <textarea class="btn btn-lg btn-light SH-name-btn position-relative" rows="6" name="message" id="message" placeholder="Tell me more about your problem." required=""></textarea>
                   
                   <input type="hidden" name="_subject" id="email-subject" value="REPORT | Shika's Heaven">
                   
-                  <button id="submit-btn" class="btn btn-lg btn-light SH-submit-btn position-relative" type="submit" 
-                  onclick="validateForm();">Submit</button>
+                  <button id="submit-btn" class="btn btn-lg btn-light SH-submit-btn position-relative" type="submit" onclick="validateForm();">Submit</button>
 
                 </fieldset>
-
 
               </form>
 

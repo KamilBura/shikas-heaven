@@ -21,7 +21,7 @@ body {
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    background-color: white;
+    background-color: #5C6784;
 }
 
 
@@ -89,50 +89,9 @@ a.navbar-brand, ul.navbar-nav {
     width: 100vh;
     margin-bottom: 1rem;
     border-radius: 10px;
-    border: 3px solid #5C6784;
+    border: 3px solid #8296ce;
     z-index: 2;
     background-color: #1D263B !important;
-}
-
-.SH-site-name {
-    font-size: 64px;
-    font-family: NG-B !important;
-    font-weight: 600;
-    text-align: center;
-    top: 18rem;
-    animation-name: SH-mid-content;
-    animation-duration: 2.3s;
-    animation-fill-mode: forwards;
-}
-
-.SH-color-gray {
-    color: #1D263B;
-    transition: 1s ease-in-out;
-}
-
-.SH-color-gray:hover {
-    color: #5C6784 !important;
-    transition: 1s ease-in-out;
-}
-
-.SH-name-color-whitegray {
-    color: #5C6784;
-    transition: 0.5s ease-in-out;
-}
-
-.SH-name-color-whitegray:hover {
-    color: white !important;
-    transition: 0.5s ease-in-out;
-}
-
-.SH-undersite-text {
-    font-size: 14px;
-    font-family: NG-B !important;
-    text-align: center;
-    top: 18rem;
-    animation-name: SH-mid-content;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
 }
 
 /* KEYFRAME */
@@ -145,18 +104,6 @@ a.navbar-brand, ul.navbar-nav {
 
 /* ENDE MID CONTENT*/
 
-/* BOTTOM OF THE SITE*/
-
-.SH-bottom-bar {
-    background-color: #1D263B;
-    z-index: 2;
-}
-
-.SH-hosted-by {
-    text-align: right !important;
-}
-
-/* ENDE BOTTOM */
 
 /* REPORT FORM */
 
@@ -178,7 +125,7 @@ form#report-form {
 }
 
 .SH-submit-btn {
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     font-family: NG-B;
     font-weight: 500;
     text-align: center;
@@ -191,8 +138,9 @@ form#report-form {
 }
 
 .SH-submit-btn:hover {
-    background-color: #5C6784;
-    transition: 1s ease-in-out;
+    border-color: #157F1F !important;
+    background-color: #4CB963;
+    transition: 0.5s ease-in-out;
 }
 
 .SH-report-up-name {
@@ -200,7 +148,22 @@ form#report-form {
     font-family: NG-B;
     text-align: center;
     padding: 2rem;
-
+    
 }
 
 /* ENDE REPORT */
+
+/*---------------*/
+
+/* BOTTOM OF THE SITE*/
+
+.SH-bottom-bar {
+    background-color: #1D263B;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+/* ENDE BOTTOM */
