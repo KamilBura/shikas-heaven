@@ -86,10 +86,11 @@ a.navbar-brand, ul.navbar-nav {
 
 .SH-mid-content {
     height: 95vh;
-    width: 100vh;
+    max-width: 100vh;
     margin-bottom: 1rem;
     border-radius: 10px;
     border: 3px solid #8296ce;
+    text-align: center;
     z-index: 2;
     background-color: #1D263B !important;
 }
@@ -117,8 +118,7 @@ form#report-form {
     font-family: NG-B;
     font-weight: 500;
     text-align: center;
-    display: flex;
-    align-items: center;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25rem;
@@ -167,3 +167,5 @@ form#report-form {
 }
 
 /* ENDE BOTTOM */
+
+/* MEDIA / ON WINDOW RESIZE */

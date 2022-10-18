@@ -66,26 +66,26 @@
         <!-- ENDE ////////////////////////////////////////////////////////-->
 
         <!-- UNDER NAVIGATION BAR / NAME / TEXT DOWNUNDER ////////////////////////////////////////////////////////-->
-        <div class="SH-mid-content position-relative container-fluid d-block bg-body shadow-sm">
+        <div class="SH-mid-content container-sm">
 
             <!-- REPORT FORM START ////////////////////////////////////////////////////////-->
-             <form id="report-form" name="report-form" accept-charset="utf-8" action="https://formspree.io/f/mvoyqezk" method="POST">
+            <form class="position-relative" id="report-form" name="report-form" accept-charset="utf-8" action="https://formspree.io/f/mvoyqezk" method="POST">
                 
-                <fieldset id="report-form-inputs">
+                <fieldset class="position-relative" id="report-form-inputs">
 
                     <div class="position-relative SH-report-up-name">Report Form</div>
                   
-                    <label for="ingame-name" class=""></label>
+                    <label for="ingame-name" class="position-relative">In-Game Nickname</label>
                   
                     <input class="btn-lg btn-light SH-name-btn position-relative form-control" type="text" name="ingame-name" id="full-name" placeholder="In-Game Nickname" required="">
                   
-                    <label for="email-address"></label>
+                    <label for="email-address" class="position-relative">E-Mail Address</label>
                   
                     <input class="btn-light btn-lg SH-name-btn position-relative form-control" type="email" name="_replyto" id="email-address" placeholder="your-email@domain.com" required="">
                   
-                    <fieldset id="report-form-selects">
+                    <fieldset id="report-form-selects" class="position-relative">
 
-                    <label for="reason"></label>
+                    <label for="reason" class="position-relative">Reason</label>
 
                     <select class="btn btn-lg btn-light SH-name-btn position-relative" name="reason" id="reason" required="">
                       <option value="" selected="" disabled="">Choose Reason</option>
@@ -96,17 +96,18 @@
                       <option value="Beta Tester | Report">ONLY FOR BETA TESTERS</option>
                     </select>
                   
-                  <label for="message"></label>
+                  <label for="message" class="position-relative">Message</label>
                   
                   <textarea class="btn btn-lg btn-light SH-name-btn position-relative" rows="6" name="message" id="message" placeholder="Tell me more about your problem." required=""></textarea>
                   
-                  <input type="hidden" name="_subject" id="email-subject" value="REPORT | Shika's Heaven">
+                  <input class="position-relative" type="hidden" name="_subject" id="email-subject" value="REPORT | Shika's Heaven">
                   
                   <button id="submit-btn" class="btn btn-lg btn-light SH-submit-btn position-relative" type="submit" onclick="validateForm();">Submit</button>
 
                 </fieldset>
 
               </form>
+        </div>
 
         </div>
         <!--BOTTOM BAR-->
