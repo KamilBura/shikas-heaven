@@ -199,9 +199,7 @@ a.navbar-brand, ul.navbar-nav {
     box-shadow: 1px 1px 10px ;
 }
 
-.SH-leftside-rightside-pause {
-    padding-bottom: 25rem;
-}
+
 
 /* LEFTSIDE / MAINTEXT / UNDERTEXT / IMG */
 
@@ -211,8 +209,7 @@ a.navbar-brand, ul.navbar-nav {
 .SH-leftside-hologramm,
 .SH-leftside-bosses,
 .SH-leftside-level,
-.SH-leftside-items,
-.SH-leftside-mobslevel {
+.SH-leftside-items {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
@@ -227,8 +224,7 @@ a.navbar-brand, ul.navbar-nav {
 .SH-leftside-undertext-hologramm,
 .SH-leftside-undertext-bosses,
 .SH-leftside-undertext-level,
-.SH-leftside-undertext-items,
-.SH-leftside-undertext-mobslevel {
+.SH-leftside-undertext-items {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
@@ -243,8 +239,7 @@ a.navbar-brand, ul.navbar-nav {
 .SH-leftside-hologramm-img,
 .SH-leftside-bosses-img,
 .SH-leftside-level-img,
-.SH-leftside-items-img,
-.SH-leftside-mobslevel-img {
+.SH-leftside-items-img {
     display: flex;
     margin-left:auto;
     margin-right:auto;
@@ -266,7 +261,8 @@ a.navbar-brand, ul.navbar-nav {
 .SH-rightside-classes,
 .SH-rightside-customblocks,
 .SH-rightside-customenchant,
-.SH-rightside-playerinf {
+.SH-rightside-playerinf,
+.SH-rightside-mobslevel  {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
@@ -280,7 +276,8 @@ a.navbar-brand, ul.navbar-nav {
 .SH-rightside-undertext-classes,
 .SH-rightside-undertext-customblocks,
 .SH-rightside-undertext-customenchant,
-.SH-rightside-undertext-playerinf {
+.SH-rightside-undertext-playerinf,
+.SH-rightside-undertext-mobslevel {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
@@ -294,7 +291,8 @@ a.navbar-brand, ul.navbar-nav {
 .SH-rightside-classes-img,
 .SH-rightside-customblocks-img,
 .SH-rightside-customenchant-img,
-.SH-rightside-playerinf-img {
+.SH-rightside-playerinf-img,
+.SH-rightside-mobslevel-img {
     display: block;
     margin-left:auto;
     margin-right:auto;

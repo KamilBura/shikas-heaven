@@ -397,8 +397,8 @@ $(document).ready(function(){
  //
 
  $(document).ready(function(){
-    $('.SH-leftside-mobslevel').viewportChecker({
-        classToAdd: 'text-com-ann-left',
+    $('.SH-rightside-mobslevel').viewportChecker({
+        classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
@@ -406,8 +406,8 @@ $(document).ready(function(){
  });
 
  $(document).ready(function(){
-    $('.SH-leftside-undertext-mobslevel').viewportChecker({
-        classToAdd: 'text-com-ann-left',
+    $('.SH-rightside-undertext-mobslevel').viewportChecker({
+        classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
@@ -415,8 +415,8 @@ $(document).ready(function(){
  });
 
  $(document).ready(function(){
-    $('.SH-leftside-mobslevel-img').viewportChecker({
-        classToAdd: 'text-com-ann-left',
+    $('.SH-rightside-mobslevel-img').viewportChecker({
+        classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
