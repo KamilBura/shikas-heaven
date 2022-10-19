@@ -121,7 +121,8 @@ form#report-form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
 }
 
 .SH-submit-btn {
@@ -133,7 +134,8 @@ form#report-form {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     top: 2rem;
 }
 
@@ -169,3 +171,11 @@ form#report-form {
 /* ENDE BOTTOM */
 
 /* MEDIA / ON WINDOW RESIZE */
+
+
+/* FORM RESIZE ON PHONES | INPUT AND BUTTONS */
+@media (min-width: 576px) {
+    .SH-name-btn, .SH-submit-btn {
+        width: 50%;
+    }
+}
