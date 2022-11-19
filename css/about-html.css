@@ -20,14 +20,21 @@ body {
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 @keyframes body-ann {
     0% {opacity: 0;}
     100% {opacity: 1;}
     
 }
+
+
 
 /* ENDE BASE */
 
@@ -141,59 +148,90 @@ a.navbar-brand, ul.navbar-nav {
 
 /* LEFTSIDE RIGHTSIDE / SOCIAL MEDIA / DISCORD*/
 
-.SH-leftside, .SH-rightside {
+.SH-socialmedia-area {
+    margin-top: 15rem;
+    width: auto;
+    object-fit: none;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: SH-mid-content;
+    animation-duration: 2s;
+    transition: 2s ease-in-out;
+}
+
+.SH-socialmedia-instagram {
+    border-radius: 1rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-socialmedia-facebook {
+    border-radius: 1rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-socialmedia-tiktok {
+    border-radius: 1rem;
+    width: 3rem;
+    background-color: #111111;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-socialmedia-steam {
+    border-radius: 1rem;
+    width: 3rem;
+    background-color: #111111;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-socialmedia-twitch {
+    border-radius: 1rem;
+    width: 3rem;
+    border: 5px solid #5c1696;
+    background-color: #5c1696;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-socialmedia-twitch:hover,
+.SH-socialmedia-steam:hover,
+.SH-socialmedia-instagram:hover,
+.SH-socialmedia-tiktok:hover,
+.SH-socialmedia-facebook:hover {
+    width: 3.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.SH-under-main {
     height:75vh;
     width:100%;
 }
 
-.SH-leftside {
-    background-color: #4CB963;
-    transition: all 0.5s linear;
-    visibility: hidden;
-}
-
-.leftside-ann {
-    animation-name: leftside-ann;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-
-}
-
-.SH-rightside {
+.SH-under-main {
     transition: all 0.5s linear;
     visibility: hidden;
     background-color: #1D263B;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
 }
 
-.rightside-ann {
-    animation-name: rightside-ann;
+.under-main-ann {
+    animation-name: under-main-ann;
     animation-duration: 2s;
-    animation-fill-mode: forwards
-}
-
-.SH-leftside:hover {
-    box-shadow: 1px 0px 10px black;
-    transition: all 0.5s linear;
-    z-index: 1;
-}
-
-.SH-rightside:hover {
-    box-shadow: -1px 0px 10px black;
-    transition: all 0.5s linear;
-    z-index: 1;
-    
+    animation-fill-mode: forwards;
+    transition: 1s ease-in-out;
 }
 
 /* KEYFRAME */
 
-@keyframes leftside-ann {
-    0% {right: 200rem; visibility: hidden;}
-    100% {right: 0rem; visibility: visible;} 
-}
-
-@keyframes rightside-ann {
-    0% {left: 200rem; visibility: hidden;}
-    100% {left: 0rem; visibility: visible;} 
+@keyframes under-main-ann {
+    0% {transform: translateY(200rem);}
+    100% {transform: translateY(0rem); visibility: visible;} 
 }
 
 /* DISCORD */
@@ -212,8 +250,9 @@ a.navbar-brand, ul.navbar-nav {
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    left: 18.25rem;
-    top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
     box-shadow: 2px 2px 10px #5865F2;
 }
 
@@ -242,272 +281,59 @@ a.navbar-brand, ul.navbar-nav {
 
 @keyframes shiba-easteregg {
     0% {left: -67rem; visibility: hidden;}
-    100% {left: 48rem; visibility: visible;}
+    100% {left: 148rem; visibility: visible;}
     
 }
 
 /* ENDE EASTEREGG :D */
 
+/*--------------------*/
 
-/* SOCIAL MEDIA */
+/* MEDIA PHONE */
 
-.SH-socialmedia-text {
-    font-size: 46px;
-    top: 2.5rem;
-    font-weight: 600;
+@media (max-width: 576px)  {
+    .SH-md-gif {
+        top: 0rem;
+        width: 250px;
+        height: 250px;
+    }
+    .SH-leftside-up {
+        height: min-content;
+    }
+    .SH-name {
+        font-size: 40px;
+        margin-top: 2rem;
+        top: 0rem;
+    }
+    .SH-text-under-name {
+        top: 1rem;
+        font-size: 18px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .SH-socialmedia-area {
+        margin-top: 2rem;
+    }
+    .SH-under-main {
+        animation-name: none;
+        visibility: visible;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    .SH-discord-text {
+        font-size: 26px;
+    }
+    .SH-discord {
+        height: 500px;
+        width: 250px;
+    }
 }
-
-.SH-facebook-img, 
-.SH-steam-img,
-.SH-instagram-img,
-.SH-twitch-img,
-.SH-tiktok-img {
-    border-radius: 8px;
-    object-fit: fill;
-    margin: 5px;
-    max-width: 11rem;
-    padding-right: 0rem;
-    width: 2.5rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 1000 !important;
-}
-
-.SH-tiktok-img:hover, 
-.SH-facebook-img:hover, 
-.SH-twitch-img:hover, 
-.SH-instagram-img:hover, 
-.SH-steam-img:hover {
-    cursor: pointer;
-}
-
-/* SOCIAL MEDIA BACKGROUND COLOR */
-
-.SH-facebook-bg {
-    background-color: #1B3562;
-    width: 100%;
-    height: 3rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.SH-steam-bg {
-    background-color: #222;
-    width: 100%;
-    height: 3rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.SH-instagram-bg {
-    background-color: #DD113D;
-    width: 100%;
-    height: 3rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.SH-twitch-bg {
-    background-color: #9146F1;
-    width: 100%;
-    height: 3rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.SH-tiktok-bg {
-    background-color: #111111;
-    width: 100%;
-    height: 3rem;
-    transition: all 0.5s ease-in-out;
-    z-index: 2;
-    cursor: pointer;
-}
-
-/* ENDE BACKGROUND */
-
-/* SOCIAL MEDIA HOVER SECTION */
-
-div.SH-twitch-bg:hover > img.SH-twitch-img {
-    width: 5rem;
-    transition: all 0.5s ease-in-out;
-    margin: 8px;
-}
-
-div.SH-instagram-bg:hover > img.SH-instagram-img {
-    width: 5rem;
-    transition: all 0.5s ease-in-out;
-    margin: 8px;
-}
-
-div.SH-steam-bg:hover > img.SH-steam-img {
-    width: 5rem;
-    transition: all 0.5s ease-in-out;
-    margin: 8px;
-}
-
-div.SH-facebook-bg:hover > img.SH-facebook-img {
-    width: 5rem;
-    transition: all 0.5s ease-in-out;
-    margin: 8px;
-}
-
-div.SH-tiktok-bg:hover > img.SH-tiktok-img {
-    width: 5rem;
-    transition: all 0.5s ease-in-out;
-    margin: 8px;
-}
-
-div.SH-twitch-bg:hover,
-div.SH-instagram-bg:hover,
-div.SH-steam-bg:hover,
-div.SH-facebook-bg:hover,
-div.SH-tiktok-bg:hover {
-    height: 6rem;
-}
-
-/* ENDE HOVER SECTION */
-
-/* SOCIAL MEDIA TEXT TYPE / COLOR */
-
-div.SH-facebook-text {
-    color: white;
-    font-family: NG-B;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    overflow: hidden;
-    right: 14rem;
-    top: 2rem;
-    user-select: none;
-    visibility: hidden;
-    z-index: 1000 !important;
-}
-
-.SH-name-color-blue {
-    color: #3a6eff;
-    font-weight: 600;
-    user-select: none;
-}
-
-div.SH-steam-text {
-    color: white;
-    font-family: NG-B;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    overflow: hidden;
-    right: 14rem;
-    top: 2rem;
-    user-select: none;
-    visibility: hidden;
-    z-index: 1000 !important;
-}
-
-.SH-name-color-black {
-    color: #3a3a3a;
-    font-weight: 600;
-    user-select: none;
-}
-
-div.SH-instagram-text {
-    color: white;
-    font-family: NG-B;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    overflow: hidden;
-    right: 14rem;
-    top: 2rem;
-    user-select: none;
-    visibility: hidden;
-    z-index: 1000 !important;
-}
-
-.SH-name-color-red {
-    color: #fc4a4a;
-    font-weight: 600;
-    user-select: none;
-}
-
-div.SH-twitch-text {
-    color: white;
-    font-family: NG-B;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    overflow: hidden;
-    right: 14rem;
-    top: 2rem;
-    user-select: none;
-    visibility: hidden;
-    z-index: 1000 !important;
-}
-
-.SH-name-color-purple {
-    color: rgb(155, 79, 255);
-    font-weight: 600;
-    user-select: none;
-}
-
-div.SH-tiktok-text {
-    color: white;
-    font-family: NG-B;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    overflow: hidden;
-    right: 14rem;
-    top: 2rem;
-    user-select: none;
-    visibility: hidden;
-    z-index: 1000 !important;
-}
-
-/* SOCIAL MEDIA ANIMATION / IN - OUT */
-
-.SH-facebook-text.in,
-.SH-steam-text.in,
-.SH-instagram-text.in,
-.SH-twitch-text.in,
-.SH-tiktok-text.in {
-    animation-name: socialmedia-name-text-ann;
-    animation-duration: 0.8s;
-    visibility: visible;
-}
-
-.SH-facebook-text.out,
-.SH-steam-text.out,
-.SH-instagram-text.out,
-.SH-twitch-text.out, 
-.SH-tiktok-text.out {
-    animation-name: socialmedia-name-text-ann-out;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    visibility: visible;
-}
-
-/* KEYFRAME */
-
-@keyframes socialmedia-name-text-ann {
-    0% {right: 50rem;visibility: hidden;}
-    100% {right: 14rem;visibility: visible;}  
-}
-
-@keyframes socialmedia-name-text-ann-out {
-    0% {right: 14rem;visibility: visible;}  
-    100% {right: 50rem;visibility: hidden;}
-}
-
-/* ENDE LEFTSIDE RIGHTSIDE SOCIALMEDIA / DISCORD */
 
 /* BOTTOM THE SITE */
 
 .SH-bottom-bar {
-    background-color: #157F1F;
+    background-color: #282A35;
     z-index: 2;
 }
 

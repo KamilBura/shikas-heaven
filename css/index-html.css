@@ -22,6 +22,11 @@ body {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     background-image: url(/shikas-heaven/images/wallpaperflare.com_wallpaper.jpg);
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes body-ann {
@@ -141,7 +146,7 @@ a.navbar-brand, ul.navbar-nav {
 /* BOTTOM OF THE SITE*/
 
 .SH-bottom-bar {
-    background-color: #1D263B;
+    background-color: #282A35;
     z-index: 2;
 }
 
@@ -150,3 +155,15 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 /* ENDE BOTTOM */
+
+/* MEDIA */
+
+@media (max-width: 575.98px) {
+    .SH-site-name {
+        top: 6rem;
+        font-size: 42px;
+    }
+    .SH-undersite-text {
+        top: 6rem;
+    }
+}

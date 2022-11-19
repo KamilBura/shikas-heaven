@@ -1,0 +1,172 @@
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+
+/* ENDE FONTS*/
+
+
+/*------------*/
+
+
+/* BASE NEEDED */
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #f1f1f1f1;
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+@keyframes body-ann {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ENDE BASE */
+
+
+/*-----------*/
+
+
+/* NAVBAR CSS*/
+
+.SH-navbar {
+    background-color: #1D263B !important;
+    margin-bottom: 0.5rem;
+    z-index: 1000;
+}
+
+.nav-link {
+    border-bottom: 1px solid white !important;
+    border-radius: 3px;
+}
+
+.SH-another-hover:hover {
+    color: #A0EADE!important;
+    border-bottom-width: 5px !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.SH-another-hover {
+    transition: 0.2s ease-in-out !important;
+}
+
+.nav-link {
+    color: #5C6784 !important;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    padding-right: 1rem !important;
+}
+
+li.nav-link,
+.active {
+    color: #A0EADE !important;
+}
+
+a.navbar-brand,
+ul.navbar-nav {
+    margin-bottom: 0.5rem;
+}
+
+
+/* ENDE NAVBAR */
+
+/*-------------------*/
+
+
+
+.SH-main-content {
+    border-bottom: 6px solid #A0EADE;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #1D263B;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.SH-main-content-rules {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 62px;
+    font-family: NG-B;
+    font-weight: 700;
+}
+
+.SH-main-content-text-h {
+    border-radius: 10px;
+    border-bottom: 3px solid #A0EADE;
+    margin-top: 2rem;
+    font-size: 42px;
+    font-family: NG-B;
+    font-weight: 600;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1D263B;
+}
+
+.SH-main-content-text {
+    padding-top: 1rem;
+    font-size: 22px;
+    font-family: NG-B;
+    font-weight: 600;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------------*/
+
+/* MEDIA */
+
+@media (max-width: 576px) {
+    .SH-main-content-text {
+        font-size: 17px;
+        width: 90%;
+    }
+    .SH-main-content-text-h {
+        width: 85%;
+        font-size: 32px;
+    }
+    .SH-main-content-rules {
+        font-size: 50px;
+    }
+}
+
+/* SITE BOTTOM / HOSTED INFORMATION ETC. */
+
+.SH-bottom-bar {
+    background-color: #282A35;
+    z-index: 2;
+}
+
+.SH-hosted-by {
+    text-align: right !important;
+}
+
+
+/* ENDE SITE BOTTOM */

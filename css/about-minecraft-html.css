@@ -1,4 +1,3 @@
-
 /* FONTS */
 
 @font-face {
@@ -6,11 +5,15 @@
     src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
 }
 
+
 /* ENDE FONTS*/
+
 
 /*------------*/
 
+
 /* BASE NEEDED */
+
 body {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -19,18 +22,29 @@ body {
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 @keyframes body-ann {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 
 /* ENDE BASE */
 
+
 /*-----------*/
+
 
 /* NAVBAR CSS*/
 
@@ -65,17 +79,22 @@ body {
     padding-right: 1rem !important;
 }
 
-li.nav-link, .active {
+li.nav-link,
+.active {
     color: #A0EADE !important;
 }
 
-a.navbar-brand, ul.navbar-nav {
+a.navbar-brand,
+ul.navbar-nav {
     margin-bottom: 0.5rem;
 }
 
+
 /* ENDE NAVBAR */
 
+
 /*-------------*/
+
 
 /* MIDCONTENT / VIDEO */
 
@@ -86,13 +105,11 @@ a.navbar-brand, ul.navbar-nav {
 
 .SH-mid-content-video {
     transform: translatez(0);
-    top: -100%;
+    top: -103%;
     bottom: -100%;
     left: -100%;
-    right: -100%;    
-  
+    right: -100%;
     margin: auto;
-  
     min-width: 100%;
     min-height: 100%;
 }
@@ -130,23 +147,33 @@ a.navbar-brand, ul.navbar-nav {
     visibility: hidden;
 }
 
+
 /* MIDCONTENT / VIDEO KEYFRAME*/
 
 @keyframes name-ann {
-    0% {left: -200rem;visibility: hidden;}
-    100% {left: "";visibility: visible;}
-    
+    0% {
+        left: -200rem;
+        visibility: hidden;
+    }
+    100% {
+        left: "";
+        visibility: visible;
+    }
 }
+
 
 /* ENDE MIDCONTENT / VIDEO + KEYFRAME*/
 
+
 /*-----------------------------------*/
+
 
 /* LEFTSIDE + RIGHTSIDE */
 
-.SH-leftside, .SH-rightside {
-    height:580vh;
-    width:100%;
+.SH-leftside,
+.SH-rightside {
+    height: 915vh;
+    width: 100%;
 }
 
 .SH-leftside {
@@ -161,13 +188,13 @@ a.navbar-brand, ul.navbar-nav {
     visibility: visible;
 }
 
+
 /* LEFTSIDE + RIGHTSIDE ANIMATION */
 
 .leftside-ann {
     animation-name: sleftside-ann;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-
 }
 
 .rightside-ann {
@@ -177,39 +204,58 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 @keyframes leftside-ann {
-    0% {right: 200rem; visibility: hidden;}
-    100% {right: 0rem; visibility: visible;} 
+    0% {
+        right: 200rem;
+        visibility: hidden;
+    }
+    100% {
+        right: 0rem;
+        visibility: visible;
+    }
 }
 
 @keyframes rightside-ann {
-    0% {left: 200rem; visibility: hidden;}
-    100% {left: 0rem; visibility: visible;} 
+    0% {
+        left: 200rem;
+        visibility: hidden;
+    }
+    100% {
+        left: 0rem;
+        visibility: visible;
+    }
 }
+
 
 /* ENDE LEFTSIDE + RIGHTSIDE / ANIMATION */
 
+
 /*---------------------------------------*/
+
 
 /* ABOUT SERVER */
 
 .SH-aboutserver-content {
     z-index: 222 !important;
-    height: 580vh;
+    height: 915vh;
     background-color: #1D263B !important;
-    box-shadow: 1px 1px 10px ;
+    box-shadow: 1px 1px 10px;
 }
-
 
 
 /* LEFTSIDE / MAINTEXT / UNDERTEXT / IMG */
 
-.SH-leftside-customprefix, 
-.SH-leftside-death, 
-.SH-leftside-damageind,
-.SH-leftside-hologramm,
+.SH-leftside-animations,
+.SH-leftside-new-end,
 .SH-leftside-bosses,
-.SH-leftside-level,
-.SH-leftside-items {
+.SH-leftside-guard,
+.SH-leftside-block-var,
+.SH-leftside-enchants,
+.SH-leftside-hostile,
+.SH-leftside-nether-biomes,
+.SH-leftside-pokemons,
+.SH-leftside-quests,
+.SH-leftside-warden
+ {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
@@ -218,13 +264,18 @@ a.navbar-brand, ul.navbar-nav {
     visibility: hidden;
 }
 
-.SH-leftside-undertext-customprefix, 
-.SH-leftside-undertext-death, 
-.SH-leftside-undertext-damageind,
-.SH-leftside-undertext-hologramm,
+.SH-leftside-undertext-animations,
+.SH-leftside-undertext-new-end,
 .SH-leftside-undertext-bosses,
-.SH-leftside-undertext-level,
-.SH-leftside-undertext-items {
+.SH-leftside-undertext-guard,
+.SH-leftside-undertext-block-var,
+.SH-leftside-undertext-enchants,
+.SH-leftside-undertext-hostile,
+.SH-leftside-undertext-nether-biomes,
+.SH-leftside-undertext-pokemons,
+.SH-leftside-undertext-quests,
+.SH-leftside-undertext-warden
+ {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
@@ -233,18 +284,26 @@ a.navbar-brand, ul.navbar-nav {
     visibility: hidden;
 }
 
-.SH-leftside-customprefix-img, 
-.SH-leftside-death-img, 
-.SH-leftside-damageind-img,
-.SH-leftside-hologramm-img,
+.SH-leftside-animations-img,
+.SH-leftside-new-end-img,
 .SH-leftside-bosses-img,
-.SH-leftside-level-img,
-.SH-leftside-items-img {
-    display: flex;
-    margin-left:auto;
-    margin-right:auto;
-    width: 40%;
-    top: 1rem;
+.SH-leftside-guard-img,
+.SH-leftside-block-var-img,
+.SH-leftside-enchants-img,
+.SH-leftside-hostile-img,
+.SH-leftside-nether-biomes-img,
+.SH-leftside-pokemons-img,
+.SH-leftside-quests-img,
+.SH-leftside-warden-img
+ {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    object-fit: cover;
+    width: 60%;
+    height: auto;
+    max-height: 350px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #5C6784;
     visibility: hidden;
@@ -252,32 +311,42 @@ a.navbar-brand, ul.navbar-nav {
 
 /* ENDE */
 
+
 /*----------*/
+
 
 /* RIGHTSIDE / MAINTEXT / UNDERTEXT / IMG */
 
-.SH-rightside-backpacks,
-.SH-rightside-bar,
-.SH-rightside-classes,
-.SH-rightside-customblocks,
-.SH-rightside-customenchant,
-.SH-rightside-playerinf,
-.SH-rightside-mobslevel  {
+.SH-rightside-caves,
+.SH-rightside-biomes,
+.SH-rightside-dungeons,
+.SH-rightside-biomes-end,
+.SH-rightside-canceled-mobs,
+.SH-rightside-food,
+.SH-rightside-jobs,
+.SH-rightside-villages,
+.SH-rightside-prefix,
+.SH-rightside-teleport
+ {
     font-size: 64px;
     font-family: NG-B;
     font-weight: 600;
     color: white;
     text-align: center;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
-.SH-rightside-undertext-backpacks,
-.SH-rightside-undertext-bar,
-.SH-rightside-undertext-classes,
-.SH-rightside-undertext-customblocks,
-.SH-rightside-undertext-customenchant,
-.SH-rightside-undertext-playerinf,
-.SH-rightside-undertext-mobslevel {
+.SH-rightside-undertext-caves,
+.SH-rightside-undertext-biomes,
+.SH-rightside-undertext-dungeons,
+.SH-rightside-undertext-biomes-end,
+.SH-rightside-undertext-canceled-mobs,
+.SH-rightside-undertext-food,
+.SH-rightside-undertext-jobs,
+.SH-rightside-undertext-villages,
+.SH-rightside-undertext-prefix,
+.SH-rightside-undertext-teleport
+ {
     font-size: 20px !important;
     font-family: NG-B;
     font-weight: 600;
@@ -286,31 +355,42 @@ a.navbar-brand, ul.navbar-nav {
     visibility: hidden;
 }
 
-.SH-rightside-backpacks-img,
-.SH-rightside-bar-img,
-.SH-rightside-classes-img,
-.SH-rightside-customblocks-img,
-.SH-rightside-customenchant-img,
-.SH-rightside-playerinf-img,
-.SH-rightside-mobslevel-img {
+.SH-rightside-caves-img,
+.SH-rightside-biomes-img,
+.SH-rightside-dungeons-img,
+.SH-rightside-biomes-end-img,
+.SH-rightside-canceled-mobs-img,
+.SH-rightside-food-img,
+.SH-rightside-jobs-img,
+.SH-rightside-villages-img,
+.SH-rightside-prefix-img,
+.SH-rightside-teleport-img
+ {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    object-fit: fill;
-    width: 60%;
-    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
-    top: 1rem;
+    object-fit: cover;
+    width: 60%;
+    height: auto;
+    max-height: 350px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #5C6784;
     visibility: hidden;
 }
 
+
 /* LEFTSIDE + RIGHTSIDE ANNIMATION = JAVASCRIPT observer.js */
 
 @keyframes text-ann-right {
-    0% {left:200rem;visibility: hidden;}
-    100% {left: 0rem;visibility: visible;}
+    0% {
+        left: 200rem;
+        visibility: hidden;
+    }
+    100% {
+        left: 0rem;
+        visibility: visible;
+    }
 }
 
 .text-com-ann-right {
@@ -321,8 +401,14 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 @keyframes text-ann-left {
-    0% {right:200rem;visibility: hidden;}
-    100% {right: 0rem;visibility: visible;}
+    0% {
+        right: 200rem;
+        visibility: hidden;
+    }
+    100% {
+        right: 0rem;
+        visibility: visible;
+    }
 }
 
 .text-com-ann-left {
@@ -332,9 +418,12 @@ a.navbar-brand, ul.navbar-nav {
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
 /* ENDE LEFTSIDE + RIGHTSIDE... */
 
+
 /*------------------------*/
+
 
 /* UNDER ABOUT LEFTSIDE RIGHTSIDE JOIN FORM */
 
@@ -364,14 +453,142 @@ a.navbar-brand, ul.navbar-nav {
     transition: 0.3s ease-in-out;
 }
 
+
 /* ENDE JOIN FORM */
 
 /*---------------*/
 
+/* START MODPACK DOWNLOAD */
+
+.SH-underlr-content {
+    height: auto;
+    background-color: hsl(222, 54%, 9%);
+    color: white;
+    padding: 2rem;
+}
+
+.SH-underlr-text {
+    font-family: NG-B;
+    font-size: 46px;
+    font-weight: 650;
+}
+
+.SH-underlr-base,
+.SH-underlr-max {
+    font-family: NG-B;
+    font-size: 22px;
+    font-weight: 650;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SH-underlr-base-p-m,
+.SH-underlr-max-p-m {
+    width: auto;
+    min-width: 40rem;
+    height: 16rem;
+    background-color: #232835;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 32rem;
+}
+
+.SH-underlr-other {
+    font-size: 16px;
+    font-family: Arial;
+    border-bottom: 1px solid #17223b ;
+}
+
+.SH-underlr-button-cf {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #F16436;
+    color: white;
+    margin-top: 2rem;
+}
+
+.SH-underlr-button {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #8ca1e6;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.SH-underlr-button-cf:hover {
+    color: #a7330c !important;
+}
+
+.text-button-hover {
+    transition: 0.1s ease-out;
+}
+
+.SH-underlr-button:hover,
+.text-button-hover:hover {
+    color: #5a7ae2 !important;
+    transition: 0.1s ease-out;
+}
+
+.SH-underlr-button-img {
+    transition: 0.2s ease-in-out;
+    object-fit:cover;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid white;
+}
+
+.SH-beta-join-button {
+    width: auto;
+    height: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #8ca1e6;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* ENDE DOWNLOAD MODPACK */
+
+/*---------------*/
+
+/* BETATESTERS JOIN NOW */
+
+.SH-betatesters-join {
+    height: auto;
+    background-color: #1f2636;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.SH-betatesters-text {
+    color: white;
+    font-family: NG-B;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+
+/* ENDE BETATESTERS */
+
+/*-------------------*/
+
 /* SITE BOTTOM / HOSTED INFORMATION ETC. */
 
 .SH-bottom-bar {
-    background-color: #157F1F;
+    background-color: #282A35;
     z-index: 2;
 }
 
@@ -379,6 +596,47 @@ a.navbar-brand, ul.navbar-nav {
     text-align: right !important;
 }
 
+
 /* ENDE SITE BOTTOM */
+
+/* MEDIA */
+
+@media (max-width: 575.98px) {
+    .SH-mid-content-video {
+        top: -143%;
+    }
+    .SH-underlr-base-p-m,
+    .SH-underlr-max-p-m {
+        max-width: 25rem;
+    }
+    .SH-name {
+        font-size: 28px;
+        left: 1rem;
+        top: 8rem;
+    }
+    .SH-text-under-name {
+        font-size: 12px;
+        left: 1rem;
+        top: 14rem;
+    }
+    .SH-underlr-content {
+        z-index: 1000;
+    }
+    .SH-underlr-text {
+        font-size: 32px;
+    }
+    .SH-underlr-base-p-m {
+        min-width: 2rem !important;
+        width: 14rem;
+        height: auto;
+    }
+    .SH-underlr-other {
+        font-size: 16px;
+    }
+    .SH-betatesters-text {
+        font-size: 36px;
+    }
+}
+
 
 /* ENDE OF CSS */

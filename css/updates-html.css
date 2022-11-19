@@ -21,6 +21,11 @@ body {
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @keyframes body-ann {
@@ -194,7 +199,7 @@ li a#content-highligh-hover:hover {
 /* BOTTOM BAR */
 
 .SH-bottom-bar {
-    background-color: #1D263B;
+    background-color: #282A35;
     z-index: 2;
 }
 

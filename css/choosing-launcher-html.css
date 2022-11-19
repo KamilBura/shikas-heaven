@@ -1,0 +1,77 @@
+/* FONTS */
+
+@font-face {
+    font-family: NG-B;
+    src: url(/shikas-heaven/fonts/NanumGothic-Regular.ttf);
+}
+
+/* ENDE FONTS*/
+
+/*------------*/
+
+/* BASE NEEDED */
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: hsl(222, 54%, 9%);
+    animation-name: body-ann;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+/* ENDE BASE */
+
+/*-----------*/
+
+/* CHOOSING LAUNCHER START */
+
+.SH-main-content {
+    background-color: #1D263B;
+    width: 45rem;
+    min-width: auto;
+    max-width: auto;
+    height: 55rem;
+    margin-top: 3.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.SH-main-content-text {
+    font-family: NG-B;
+    font-size: 36px;
+    color: #f1f1f1f1;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.SH-main-content-text-premium {
+    font-family: NG-B;
+    font-size: 16px;
+    color: #f1f1f1f1;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.SH-choose-background {
+    width: 20rem;
+    background-color: #3e4558;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transition: all 0.2 ease-out;
+}
+
+.SH-choose-background:hover {
+    transition: all 0.2 ease-out;
+    background-color: azure;
+    color: #1D263B !important;
+}

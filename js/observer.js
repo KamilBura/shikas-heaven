@@ -1,15 +1,6 @@
 $(document).ready(function(){
-   $('.SH-leftside').viewportChecker({
-       classToAdd: 'leftside-ann',
-       offset: 50,
-       repeat: false,
-       callbackFunction: function(elem, action){}
-   });
-});
-
-$(document).ready(function(){
-    $('.SH-rightside').viewportChecker({
-        classToAdd: 'rightside-ann',
+    $('.SH-under-main').viewportChecker({
+        classToAdd: 'under-main-ann',
         offset: 50,
         repeat: false,
         callbackFunction: function(elem, action){}
@@ -17,10 +8,24 @@ $(document).ready(function(){
  });
 
 
-// ABOUT SERVER TEXT OBSERVER 
+// ABOUT SERVER TEXT OBSERVER -------------------------------------------------------------------------------------------------
 
- $(document).ready(function(){
-    $('.SH-leftside-customprefix').viewportChecker({
+// VIEWPORT FOR LEFTSIDE ANIMATIONS
+
+ $(document).ready(function() {
+    $('.SH-leftside-animations').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-animations').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-animations-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -28,8 +33,22 @@ $(document).ready(function(){
     });
  });
 
+// VIEWPORT FOR LEFSTIDE NEW END
+
  $(document).ready(function(){
-    $('.SH-leftside-undertext-customprefix').viewportChecker({
+    $('.SH-leftside-new-end').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-new-end').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-new-end-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -37,103 +56,7 @@ $(document).ready(function(){
     });
  });
 
- $(document).ready(function(){
-    $('.SH-leftside-customprefix-img').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-leftside-death').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-undertext-death').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-death-img').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-leftside-damageind').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-undertext-damageind').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-damageind-img').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-leftside-hologramm').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-undertext-hologramm').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-leftside-hologramm-img').viewportChecker({
-        classToAdd: 'text-com-ann-left',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
+ // VIEWPORT FOR LEFTSIDE BOSSES
 
  $(document).ready(function(){
     $('.SH-leftside-bosses').viewportChecker({
@@ -142,18 +65,12 @@ $(document).ready(function(){
         repeat: false,
         callbackFunction: function(elem, action){}
     });
- });
-
- $(document).ready(function(){
     $('.SH-leftside-undertext-bosses').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
- });
-
- $(document).ready(function(){
     $('.SH-leftside-bosses-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
@@ -162,10 +79,22 @@ $(document).ready(function(){
     });
  });
 
- //
+ // VIEWPORT FOR LEFTSIDE GUARD
 
  $(document).ready(function(){
-    $('.SH-leftside-level').viewportChecker({
+    $('.SH-leftside-guard').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-guard').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-guard-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -173,8 +102,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT FOR LEFTSIDE BLOCK VARIANTS
+
  $(document).ready(function(){
-    $('.SH-leftside-undertext-level').viewportChecker({
+    $('.SH-leftside-block-var').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-block-var').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-block-var-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -182,8 +125,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT FOR LEFTSIDE ENCHANTS
+
  $(document).ready(function(){
-    $('.SH-leftside-level-img').viewportChecker({
+    $('.SH-leftside-enchants').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-enchants').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-enchants-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -191,10 +148,22 @@ $(document).ready(function(){
     });
  });
 
- //
+ // VIEWPORT FOR LEFTSIDE HOSTILE ANIMALS
 
  $(document).ready(function(){
-    $('.SH-leftside-items').viewportChecker({
+    $('.SH-leftside-hostile').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-hostile').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-hostile-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -202,8 +171,22 @@ $(document).ready(function(){
     });
  });
 
- $(document).ready(function(){
-    $('.SH-leftside-undertext-items').viewportChecker({
+  // VIEWPORT FOR LEFTSIDE NETHER BIOMES
+
+  $(document).ready(function(){
+    $('.SH-leftside-nether-biomes').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-nether-biomes').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-nether-biomes-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -211,8 +194,22 @@ $(document).ready(function(){
     });
  });
 
- $(document).ready(function(){
-    $('.SH-leftside-items-img').viewportChecker({
+   // VIEWPORT FOR LEFTSIDE POKEMONS
+
+   $(document).ready(function(){
+    $('.SH-leftside-pokemons').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-pokemons').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-pokemons-img').viewportChecker({
         classToAdd: 'text-com-ann-left',
         offset: 300,
         repeat: false,
@@ -220,10 +217,69 @@ $(document).ready(function(){
     });
  });
 
+   // VIEWPORT FOR LEFTSIDE QUESTS
+
+   $(document).ready(function(){
+    $('.SH-leftside-quests').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-quests').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-quests-img').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+ });
+
+   // VIEWPORT FOR LEFTSIDE WARDEN
+
+   $(document).ready(function(){
+    $('.SH-leftside-warden').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-undertext-warden').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-leftside-warden-img').viewportChecker({
+        classToAdd: 'text-com-ann-left',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+ });
  // RIGHT SIDE
 
+ // VIEWPORT RIGHTSIDE CAVES
+
  $(document).ready(function(){
-    $('.SH-rightside-backpacks').viewportChecker({
+    $('.SH-rightside-caves').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-caves').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-caves-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -231,8 +287,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT RIGHTSIDE END BIOMES
+
  $(document).ready(function(){
-    $('.SH-rightside-undertext-backpacks').viewportChecker({
+    $('.SH-rightside-biomes-end').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-biomes-end').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-biomes-end-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -240,8 +310,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT RIGHTSIDE CANCELED MOBS
+
  $(document).ready(function(){
-    $('.SH-rightside-backpacks-img').viewportChecker({
+    $('.SH-rightside-canceled-mobs').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-canceled-mobs').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-canceled-mobs-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -249,10 +333,22 @@ $(document).ready(function(){
     });
  });
 
- //
+ // VIEWPORT RIGHTSIDE BIOMES
 
  $(document).ready(function(){
-    $('.SH-rightside-customblocks').viewportChecker({
+    $('.SH-rightside-biomes').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-biomes').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-biomes-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -260,8 +356,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT RIGHTSIDE DUNGEONS
+
  $(document).ready(function(){
-    $('.SH-rightside-undertext-customblocks').viewportChecker({
+    $('.SH-rightside-dungeons').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-dungeons').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-dungeons-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -269,8 +379,22 @@ $(document).ready(function(){
     });
  });
 
+ // VIEWPORT RIGHTSIDE FOOD
+
  $(document).ready(function(){
-    $('.SH-rightside-customblocks-img').viewportChecker({
+    $('.SH-rightside-food').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-food').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-food-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -278,10 +402,22 @@ $(document).ready(function(){
     });
  });
 
- //
+ // VIEWPORT RIGHTSIDE JOBS
 
  $(document).ready(function(){
-    $('.SH-rightside-customenchant').viewportChecker({
+    $('.SH-rightside-jobs').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-jobs').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-jobs-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -289,8 +425,22 @@ $(document).ready(function(){
     });
  });
 
- $(document).ready(function(){
-    $('.SH-rightside-undertext-customenchant').viewportChecker({
+// VIEWPORT RIGHTSIDE VILLAGES
+
+$(document).ready(function(){
+    $('.SH-rightside-villages').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-villages').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-villages-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -298,8 +448,22 @@ $(document).ready(function(){
     });
  });
 
- $(document).ready(function(){
-    $('.SH-rightside-customenchant-img').viewportChecker({
+// VIEWPORT RIGHTSIDE PREFIXES
+
+$(document).ready(function(){
+    $('.SH-rightside-prefix').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-undertext-prefix').viewportChecker({
+        classToAdd: 'text-com-ann-right',
+        offset: 300,
+        repeat: false,
+        callbackFunction: function(elem, action){}
+    });
+    $('.SH-rightside-prefix-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
@@ -307,115 +471,22 @@ $(document).ready(function(){
     });
  });
 
- //
+// VIEWPORT RIGHTSIDE TELEPORTATIONS
 
- $(document).ready(function(){
-    $('.SH-rightside-bar').viewportChecker({
+$(document).ready(function(){
+    $('.SH-rightside-teleport').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-undertext-bar').viewportChecker({
+    $('.SH-rightside-undertext-teleport').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,
         callbackFunction: function(elem, action){}
     });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-bar-img').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-rightside-classes').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-undertext-classes').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-classes-img').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-rightside-playerinf').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-undertext-playerinf').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-playerinf-img').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- //
-
- $(document).ready(function(){
-    $('.SH-rightside-mobslevel').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-undertext-mobslevel').viewportChecker({
-        classToAdd: 'text-com-ann-right',
-        offset: 300,
-        repeat: false,
-        callbackFunction: function(elem, action){}
-    });
- });
-
- $(document).ready(function(){
-    $('.SH-rightside-mobslevel-img').viewportChecker({
+    $('.SH-rightside-teleport-img').viewportChecker({
         classToAdd: 'text-com-ann-right',
         offset: 300,
         repeat: false,

@@ -22,7 +22,13 @@ body {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     background-color: #5C6784;
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 
@@ -85,7 +91,7 @@ a.navbar-brand, ul.navbar-nav {
 /* MID CONTENT */
 
 .SH-mid-content {
-    height: 95vh;
+    height: auto;
     max-width: 100vh;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -160,7 +166,7 @@ form#report-form {
 /* BOTTOM OF THE SITE*/
 
 .SH-bottom-bar {
-    background-color: #1D263B;
+    background-color: #282A35;
     z-index: 2;
 }
 

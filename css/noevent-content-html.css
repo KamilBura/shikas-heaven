@@ -1,6 +1,12 @@
 body {
     background-color: rgb(255, 255, 255);
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 h1 {
     text-align: center;
