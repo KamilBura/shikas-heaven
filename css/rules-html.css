@@ -18,7 +18,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background: #f1f1f1f1;
+    background: #5C6784;
     animation-name: body-ann;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -155,7 +155,20 @@ ul.navbar-nav {
     .SH-main-content-rules {
         font-size: 50px;
     }
+    .navbar-nav {
+        display: none;
+        transition: 1,5s ease-in-out;
+    }
+    .SH-navbar a img {
+        width: 50px;        
+    }
+    .SH-navbar:active ul.navbar-nav {
+        display: inline-block;
+        transition: 1,5s ease-in-out;
+    }
 }
+
+* {border: 1px solid red;}
 
 /* SITE BOTTOM / HOSTED INFORMATION ETC. */
 
