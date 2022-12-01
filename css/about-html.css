@@ -36,6 +36,7 @@ body::-webkit-scrollbar {
 
 
 
+
 /* ENDE BASE */
 
 /*-----------*/
@@ -121,12 +122,13 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 .SH-text-under-name {
+    max-width: 80rem;
     font-size: 20px;
     font-family: NG-B !important;
     font-weight: 600;
     top: 13rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: SH-mid-content;
