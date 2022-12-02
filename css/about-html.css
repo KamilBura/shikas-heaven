@@ -18,7 +18,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
     animation-name: body-ann;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     scrollbar-width: none;
 }
