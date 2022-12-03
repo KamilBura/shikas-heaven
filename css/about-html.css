@@ -1,4 +1,3 @@
-
 /* FONTS */
 
 @font-face {
@@ -17,14 +16,24 @@ body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
-    animation-name: body-ann;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: body-ann;
+            animation-name: body-ann;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+
+@-webkit-keyframes body-ann {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
 }
 
 
@@ -57,10 +66,14 @@ body::-webkit-scrollbar {
 .SH-another-hover:hover {
     color: #A0EADE!important;
     border-bottom-width: 5px !important;
+    -webkit-transition: 0.2s ease-in-out !important;
+    -o-transition: 0.2s ease-in-out !important;
     transition: 0.2s ease-in-out !important;
 }
 
 .SH-another-hover {
+    -webkit-transition: 0.2s ease-in-out !important;
+    -o-transition: 0.2s ease-in-out !important;
     transition: 0.2s ease-in-out !important;
 }
 
@@ -94,18 +107,26 @@ a.navbar-brand, ul.navbar-nav {
 
 .SH-md-gif {
     top: 12rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1px 1px 10px inset gray;
+    -webkit-box-shadow: 1px 1px 10px inset gray;
+            box-shadow: 1px 1px 10px inset gray;
     border-radius: 10px;
     border-bottom-style: solid ;
     border-color: #A0EADE;
     border-width: 8px ;
     visibility: hidden;
-    animation-fill-mode: forwards;
-    animation-name: SH-mid-content;
-    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
 }
 
@@ -115,9 +136,14 @@ a.navbar-brand, ul.navbar-nav {
     font-weight: 600;
     top: 12rem;
     visibility: hidden;
-    animation-fill-mode: forwards;
-    animation-name: SH-mid-content;
-    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
 }
 
@@ -130,13 +156,24 @@ a.navbar-brand, ul.navbar-nav {
     margin-left: auto;
     margin-right: auto;
     visibility: hidden;
-    animation-fill-mode: forwards;
-    animation-name: SH-mid-content;
-    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
 }
 
 /* KEYFRAME */
+
+@-webkit-keyframes SH-mid-content {
+    0% {right: 200rem; visibility: visible;}
+    100% {right: 0rem; visibility: visible;}
+    
+}
 
 @keyframes SH-mid-content {
     0% {right: 200rem; visibility: visible;}
@@ -153,11 +190,17 @@ a.navbar-brand, ul.navbar-nav {
 .SH-socialmedia-area {
     margin-top: 15rem;
     width: auto;
-    object-fit: none;
+    -o-object-fit: none;
+       object-fit: none;
     visibility: hidden;
-    animation-fill-mode: forwards;
-    animation-name: SH-mid-content;
-    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: SH-mid-content;
+            animation-name: SH-mid-content;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
     transition: 2s ease-in-out;
 }
 
@@ -165,6 +208,8 @@ a.navbar-brand, ul.navbar-nav {
     border-radius: 1rem;
     width: 3rem;
     cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -172,6 +217,8 @@ a.navbar-brand, ul.navbar-nav {
     border-radius: 1rem;
     width: 3rem;
     cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -180,6 +227,8 @@ a.navbar-brand, ul.navbar-nav {
     width: 3rem;
     background-color: #111111;
     cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -188,6 +237,8 @@ a.navbar-brand, ul.navbar-nav {
     width: 3rem;
     background-color: #111111;
     cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -197,6 +248,8 @@ a.navbar-brand, ul.navbar-nav {
     border: 5px solid #5c1696;
     background-color: #5c1696;
     cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -206,6 +259,8 @@ a.navbar-brand, ul.navbar-nav {
 .SH-socialmedia-tiktok:hover,
 .SH-socialmedia-facebook:hover {
     width: 3.5rem;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -215,6 +270,8 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 .SH-under-main {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
     visibility: hidden;
     background-color: #1D263B;
@@ -223,17 +280,27 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 .under-main-ann {
-    animation-name: under-main-ann;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: under-main-ann;
+            animation-name: under-main-ann;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 
 /* KEYFRAME */
 
+@-webkit-keyframes under-main-ann {
+    0% {-webkit-transform: translateY(200rem);transform: translateY(200rem);}
+    100% {-webkit-transform: translateY(0rem);transform: translateY(0rem); visibility: visible;} 
+}
+
 @keyframes under-main-ann {
-    0% {transform: translateY(200rem);}
-    100% {transform: translateY(0rem); visibility: visible;} 
+    0% {-webkit-transform: translateY(200rem);transform: translateY(200rem);}
+    100% {-webkit-transform: translateY(0rem);transform: translateY(0rem); visibility: visible;} 
 }
 
 /* DISCORD */
@@ -255,7 +322,8 @@ a.navbar-brand, ul.navbar-nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
-    box-shadow: 2px 2px 10px #5865F2;
+    -webkit-box-shadow: 2px 2px 10px #5865F2;
+            box-shadow: 2px 2px 10px #5865F2;
 }
 
 .SH-discord:hover {
@@ -273,12 +341,25 @@ a.navbar-brand, ul.navbar-nav {
 .SH-discord-egg {
     bottom: 0rem;
     left: 48rem;
-    animation-name: shiba-easteregg;
-    animation-delay: 120s;
-    animation-duration: 20s;
-    user-select: none;
+    -webkit-animation-name: shiba-easteregg;
+            animation-name: shiba-easteregg;
+    -webkit-animation-delay: 120s;
+            animation-delay: 120s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     visibility: hidden;
-    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shiba-easteregg {
+    0% {left: -67rem; visibility: hidden;}
+    100% {left: 148rem; visibility: visible;}
+    
 }
 
 @keyframes shiba-easteregg {
@@ -300,6 +381,8 @@ a.navbar-brand, ul.navbar-nav {
         height: 250px;
     }
     .SH-leftside-up {
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content;
     }
     .SH-name {
@@ -318,7 +401,8 @@ a.navbar-brand, ul.navbar-nav {
         margin-top: 2rem;
     }
     .SH-under-main {
-        animation-name: none;
+        -webkit-animation-name: none;
+                animation-name: none;
         visibility: visible;
         height: auto;
         padding-bottom: 1rem;
@@ -344,5 +428,4 @@ a.navbar-brand, ul.navbar-nav {
 }
 
 /* ENDE BOTTOM */
-
 
